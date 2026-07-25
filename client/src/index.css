@@ -1,6 +1,12 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/* ============================================================
+   7Band Inc. — Elevated Civic Design System
+   Deep Navy #0D2B4E | Emerald #1A7A4A | Gold #D4A017 | Off-White #F8F7F4
+   Typography: Playfair Display (display) + Inter (body)
+   ============================================================ */
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -43,74 +49,70 @@
 }
 
 :root {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-600);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --radius: 0.65rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.235 0.015 65);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.235 0.015 65);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.235 0.015 65);
-  --secondary: oklch(0.98 0.001 286.375);
-  --secondary-foreground: oklch(0.4 0.015 65);
-  --muted: oklch(0.967 0.001 286.375);
-  --muted-foreground: oklch(0.552 0.016 285.938);
-  --accent: oklch(0.967 0.001 286.375);
-  --accent-foreground: oklch(0.141 0.005 285.823);
+  /* Brand palette CSS vars */
+  --navy: #0D2B4E;
+  --emerald: #1A7A4A;
+  --gold: #D4A017;
+  --gold-light: #e8b420;
+  --off-white: #F8F7F4;
+  --warm-gray: #E8E6E1;
+
+  /* Shadcn tokens mapped to 7Band brand */
+  --primary: oklch(0.22 0.06 240);
+  --primary-foreground: oklch(0.98 0 0);
+  --secondary: oklch(0.97 0.005 80);
+  --secondary-foreground: oklch(0.22 0.06 240);
+  --accent: oklch(0.52 0.14 145);
+  --accent-foreground: oklch(0.98 0 0);
+  --muted: oklch(0.94 0.005 80);
+  --muted-foreground: oklch(0.50 0.015 65);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.623 0.214 259.815);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.235 0.015 65);
-  --sidebar-accent: oklch(0.967 0.001 286.375);
-  --sidebar-accent-foreground: oklch(0.141 0.005 285.823);
-  --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.623 0.214 259.815);
+  --radius: 0.5rem;
+  --background: oklch(0.99 0.003 80);
+  --foreground: oklch(0.18 0.02 240);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.18 0.02 240);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.18 0.02 240);
+  --border: oklch(0.88 0.006 80);
+  --input: oklch(0.88 0.006 80);
+  --ring: oklch(0.52 0.14 145);
+  --sidebar: oklch(0.22 0.06 240);
+  --sidebar-foreground: oklch(0.98 0 0);
+  --sidebar-primary: oklch(0.72 0.14 75);
+  --sidebar-primary-foreground: oklch(0.18 0.02 240);
+  --sidebar-accent: oklch(0.28 0.06 240);
+  --sidebar-accent-foreground: oklch(0.98 0 0);
+  --sidebar-border: oklch(1 0 0 / 12%);
+  --sidebar-ring: oklch(0.52 0.14 145);
+  --chart-1: oklch(0.52 0.14 145);
+  --chart-2: oklch(0.72 0.14 75);
+  --chart-3: oklch(0.22 0.06 240);
+  --chart-4: oklch(0.65 0.12 145);
+  --chart-5: oklch(0.35 0.08 240);
 }
 
 .dark {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-500);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --background: oklch(0.141 0.005 285.823);
-  --foreground: oklch(0.85 0.005 65);
-  --card: oklch(0.21 0.006 285.885);
-  --card-foreground: oklch(0.85 0.005 65);
-  --popover: oklch(0.21 0.006 285.885);
-  --popover-foreground: oklch(0.85 0.005 65);
-  --secondary: oklch(0.24 0.006 286.033);
-  --secondary-foreground: oklch(0.7 0.005 65);
-  --muted: oklch(0.274 0.006 286.033);
-  --muted-foreground: oklch(0.705 0.015 286.067);
-  --accent: oklch(0.274 0.006 286.033);
-  --accent-foreground:  oklch(0.92 0.005 65);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.985 0 0);
+  --background: oklch(0.14 0.04 240);
+  --foreground: oklch(0.92 0.005 80);
+  --card: oklch(0.18 0.04 240);
+  --card-foreground: oklch(0.92 0.005 80);
+  --popover: oklch(0.18 0.04 240);
+  --popover-foreground: oklch(0.92 0.005 80);
+  --secondary: oklch(0.22 0.04 240);
+  --secondary-foreground: oklch(0.85 0.005 80);
+  --muted: oklch(0.26 0.04 240);
+  --muted-foreground: oklch(0.65 0.015 80);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.488 0.243 264.376);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --sidebar: oklch(0.21 0.006 285.885);
-  --sidebar-foreground: oklch(0.85 0.005 65);
-  --sidebar-accent: oklch(0.274 0.006 286.033);
-  --sidebar-accent-foreground:  oklch(0.985 0 0);
+  --ring: oklch(0.52 0.14 145);
+  --sidebar: oklch(0.18 0.04 240);
+  --sidebar-foreground: oklch(0.92 0.005 80);
+  --sidebar-accent: oklch(0.26 0.04 240);
+  --sidebar-accent-foreground: oklch(0.98 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.488 0.243 264.376);
+  --sidebar-ring: oklch(0.52 0.14 145);
 }
 
 @layer base {
@@ -119,6 +121,8 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
   }
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
@@ -134,44 +138,171 @@
 }
 
 @layer components {
-  /**
-   * Custom container utility that centers content and adds responsive padding.
-   *
-   * This overrides Tailwind's default container behavior to:
-   * - Auto-center content (mx-auto)
-   * - Add responsive horizontal padding
-   * - Set max-width for large screens
-   *
-   * Usage: <div className="container">...</div>
-   *
-   * For custom widths, use max-w-* utilities directly:
-   * <div className="max-w-6xl mx-auto px-4">...</div>
-   */
+  /* ── Container ── */
   .container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem; /* 16px - mobile padding */
+    padding-left: 1rem;
     padding-right: 1rem;
   }
-
   .flex {
     min-height: 0;
     min-width: 0;
   }
-
   @media (min-width: 640px) {
-    .container {
-      padding-left: 1.5rem; /* 24px - tablet padding */
-      padding-right: 1.5rem;
-    }
+    .container { padding-left: 1.5rem; padding-right: 1.5rem; }
+  }
+  @media (min-width: 1024px) {
+    .container { padding-left: 2rem; padding-right: 2rem; max-width: 1280px; }
   }
 
-  @media (min-width: 1024px) {
-    .container {
-      padding-left: 2rem; /* 32px - desktop padding */
-      padding-right: 2rem;
-      max-width: 1280px; /* Standard content width */
+  /* ── 7-Band Stripe Motif (signature brand device) ── */
+  .band-stripe {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    height: 6px;
+  }
+  .band-stripe span {
+    display: block;
+    height: 100%;
+    border-radius: 2px;
+  }
+  .band-stripe span:nth-child(odd)  { background-color: #0D2B4E; }
+  .band-stripe span:nth-child(even) { background-color: #D4A017; }
+
+  /* Light variant (on dark backgrounds) */
+  .band-stripe-light span:nth-child(odd)  { background-color: #D4A017; }
+  .band-stripe-light span:nth-child(even) { background-color: rgba(255,255,255,0.45); }
+
+  /* Large variant */
+  .band-stripe-lg { height: 8px; gap: 4px; }
+  .band-stripe-lg span { border-radius: 3px; }
+
+  /* Horizontal rule variant */
+  .band-rule {
+    display: flex;
+    gap: 3px;
+    height: 4px;
+    width: 100%;
+  }
+  .band-rule span {
+    flex: 1;
+    border-radius: 1px;
+  }
+  .band-rule span:nth-child(odd)  { background-color: #0D2B4E; }
+  .band-rule span:nth-child(even) { background-color: #D4A017; }
+
+  /* ── Card hover lift ── */
+  .card-lift {
+    transition: transform 200ms cubic-bezier(0.23, 1, 0.32, 1),
+                box-shadow 200ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .card-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px -8px rgba(13, 43, 78, 0.18);
+  }
+
+  /* ── Fade-up entrance animation ── */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 500ms cubic-bezier(0.23, 1, 0.32, 1),
+                transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .fade-up.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .fade-up { opacity: 1; transform: none; transition: none; }
+  }
+
+  /* ── Gold underline on headings ── */
+  .heading-underline {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+  }
+  .heading-underline::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 55%;
+    height: 3px;
+    background: #D4A017;
+    border-radius: 2px;
+  }
+
+  /* ── Civic pull-quote ── */
+  .pull-quote {
+    border-left: 4px solid #D4A017;
+    padding-left: 1.5rem;
+    font-style: italic;
+    color: #0D2B4E;
+    font-size: 1.2rem;
+    line-height: 1.65;
+  }
+
+  /* ── Photo editorial panel ── */
+  .photo-editorial {
+    position: relative;
+  }
+  .photo-editorial::before {
+    content: '';
+    position: absolute;
+    top: -1.25rem;
+    left: -1.25rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    background: rgba(212, 160, 23, 0.18);
+    border-radius: 0.75rem;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .photo-editorial::after {
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    right: -1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: rgba(26, 122, 74, 0.12);
+    border-radius: 0.75rem;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  /* ── Staggered stat block ── */
+  .stat-block {
+    border-top: 3px solid #D4A017;
+    padding-top: 1.25rem;
+  }
+
+  /* ── Navy section with diagonal bottom ── */
+  .section-navy-diagonal {
+    background-color: #0D2B4E;
+    clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+    padding-bottom: 8rem;
+  }
+
+  /* ── Asymmetric feature row ── */
+  .feature-row-offset {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    gap: 4rem;
+    align-items: center;
+  }
+  .feature-row-offset.reverse {
+    grid-template-columns: 7fr 5fr;
+  }
+  @media (max-width: 1023px) {
+    .feature-row-offset,
+    .feature-row-offset.reverse {
+      grid-template-columns: 1fr;
+      gap: 2rem;
     }
   }
 }
