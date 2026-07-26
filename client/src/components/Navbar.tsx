@@ -29,6 +29,7 @@ const navLinks = [
   },
   { label: "Events", href: "/events" },
   { label: "Services", href: "/services" },
+  { label: "Academy", href: "/academy" },
   { label: "Partners", href: "/partners" },
   { label: "Resources", href: "/resources" },
   { label: "News", href: "/news" },
