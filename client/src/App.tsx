@@ -15,6 +15,7 @@ import Partners from "./pages/Partners";
 import Resources from "./pages/Resources";
 import News from "./pages/News";
 import Contact from "./pages/Contact";
+import Services from "./pages/Services";
 
 function Router() {
   return (
@@ -24,6 +25,7 @@ function Router() {
       <Route path="/programs" component={Programs} />
       <Route path="/programs/:slug" component={ProgramDetail} />
       <Route path="/events" component={Events} />
+      <Route path="/services" component={Services} />
       <Route path="/donate" component={Donate} />
       <Route path="/volunteer" component={Volunteer} />
       <Route path="/partners" component={Partners} />
