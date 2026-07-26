@@ -24,10 +24,7 @@ const navLinks = [
     href: "/programs",
     children: [
       { label: "Financial Literacy", href: "/programs/financial-literacy" },
-      { label: "Entrepreneurship", href: "/programs/entrepreneurship" },
-      { label: "Youth Programs", href: "/programs/youth" },
-      { label: "Community Workshops", href: "/programs/workshops" },
-      { label: "Digital Learning", href: "/programs/digital-learning" },
+      { label: "The Smart Beauty Project", href: "https://smartbeauty-essknvt9.manus.space/" },
     ],
   },
   { label: "Events", href: "/events" },

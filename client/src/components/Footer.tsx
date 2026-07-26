@@ -15,11 +15,8 @@ const footerLinks = {
   ],
   programs: [
     { label: "Financial Literacy", href: "/programs/financial-literacy" },
-    { label: "Entrepreneurship", href: "/programs/entrepreneurship" },
-    { label: "Youth Programs", href: "/programs/youth" },
-    { label: "Community Workshops", href: "/programs/workshops" },
-    { label: "Digital Learning", href: "/programs/digital-learning" },
-  ],
+    { label: "The Smart Beauty Project", href: "https://smartbeauty-essknvt9.manus.space/" },
+],
   getInvolved: [
     { label: "Donate", href: "/donate" },
     { label: "Volunteer", href: "/volunteer" },
@@ -52,9 +49,9 @@ export default function Footer() {
                 <span key={i} style={{ width: `${w}px` }} />
               ))}
             </div>
-            <p className="text-white/70 text-sm leading-relaxed mb-6">
-              Building futures through education, entrepreneurship, and community empowerment.
-            </p>
+           <p className="text-white/70 text-sm leading-relaxed mb-6">
+              Building futures through financial literacy, consumer education, and community empowerment.
+           </p>
             <div className="flex gap-3">
               {[
                 { icon: Facebook, label: "Facebook" },

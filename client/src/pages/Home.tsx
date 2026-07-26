@@ -24,30 +24,27 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const programs = [
-  { icon: BookOpen,   title: "Financial Literacy",    desc: "Budget, save, invest, and plan for a secure financial future.", href: "/programs/financial-literacy", color: "bg-[#1A7A4A]" },
-  { icon: TrendingUp, title: "Entrepreneurship",       desc: "Mentorship, resources, and tools to launch sustainable businesses.", href: "/programs/entrepreneurship",   color: "bg-[#0D2B4E]" },
-  { icon: Users,      title: "Youth Programs",         desc: "Leadership, education, and life skills for ages 12–24.",          href: "/programs/youth",              color: "bg-[#1A7A4A]" },
-  { icon: Hammer,     title: "Community Workshops",    desc: "Hands-on workshops that bring neighbors together to grow.",       href: "/programs/workshops",          color: "bg-[#0D2B4E]" },
-  { icon: Laptop,     title: "Digital Learning",       desc: "Bridging the digital divide with accessible tech education.",    href: "/programs/digital-learning",   color: "bg-[#1A7A4A]" },
+  { icon: BookOpen, title: "Financial Literacy",       desc: "Budget, save, invest, and plan for a secure financial future. We equip participants with the tools to take control of their financial lives.", href: "/programs/financial-literacy", color: "bg-[#1A7A4A]" },
+  { icon: Star,     title: "The Smart Beauty Project", desc: "Empowering Black women through financial literacy and consumer education — building wealth one beauty choice at a time.", href: "https://smartbeauty-essknvt9.manus.space/", color: "bg-[#0D2B4E]" },
 ];
 
 const stats = [
   { value: "500+", label: "Community Members Served", sub: "and growing every year" },
-  { value: "5",    label: "Active Programs",           sub: "across key life areas" },
+  { value: "2",    label: "Active Programs",           sub: "focused and impactful" },
   { value: "20+",  label: "Volunteer Educators",       sub: "dedicated professionals" },
   { value: "3",    label: "Years of Impact",           sub: "building lasting change" },
 ];
 
 const testimonials = [
   { name: "Maria Johnson",  role: "Financial Literacy Graduate",       quote: "7Band Inc. changed how I think about money. I went from living paycheck to paycheck to building my first emergency fund.", initials: "MJ" },
-  { name: "David Chen",     role: "Entrepreneurship Program Participant", quote: "The mentorship and resources I received helped me launch my small business. I couldn't have done it without this community.", initials: "DC" },
-  { name: "Aisha Williams", role: "Youth Program Alumna",               quote: "I learned leadership skills that I use every day. 7Band Inc. believed in me before I believed in myself.", initials: "AW" },
+  { name: "Jasmine Carter", role: "Smart Beauty Project Participant",   quote: "Learning to read ingredient labels changed how I shop. I've saved hundreds of dollars and finally feel in control of my finances.", initials: "JC" },
+  { name: "Aisha Williams", role: "Financial Literacy Graduate",        quote: "The tools and knowledge I gained helped me build my first emergency fund. 7Band Inc. believed in me before I believed in myself.", initials: "AW" },
 ];
 
 const news = [
-  { date: "July 15, 2026",  category: "Community", title: "7Band Inc. Launches New Digital Skills Workshop Series",    excerpt: "Our newest program helps community members navigate the digital economy with confidence." },
-  { date: "June 28, 2026",  category: "Programs",  title: "Financial Literacy Cohort Celebrates 50 Graduates",        excerpt: "Fifty community members completed our intensive financial literacy program this spring." },
-  { date: "June 10, 2026",  category: "Partners",  title: "7Band Inc. Partners with Local Schools for Youth Outreach", excerpt: "New partnership brings entrepreneurship education directly into middle and high school classrooms." },
+  { date: "July 15, 2026",  category: "Programs",  title: "Financial Literacy Cohort Celebrates 50 Graduates",        excerpt: "Fifty community members completed our intensive financial literacy program this spring." },
+  { date: "June 28, 2026",  category: "Partners",  title: "7Band Inc. Partners with The Smart Beauty Project",        excerpt: "Our newest partnership brings consumer education and financial literacy to Black women across the community." },
+  { date: "June 10, 2026",  category: "Community", title: "7Band Inc. Expands Community Outreach for 2026",           excerpt: "New initiatives aim to reach more families and individuals with our two flagship programs." },
 ];
 
 const categoryColors: Record<string, string> = {
@@ -134,9 +131,9 @@ export default function Home() {
               at a Time
             </h1>
 
-            <p className="text-lg md:text-xl text-white/75 leading-relaxed mb-10 max-w-xl">
-              7Band Inc. empowers individuals and families through financial literacy, entrepreneurship, youth development, and digital education — creating lasting change from the ground up.
-            </p>
+           <p className="text-lg md:text-xl text-white/75 leading-relaxed mb-10 max-w-xl">
+              7Band Inc. empowers individuals and families through financial literacy and consumer education — creating lasting change from the ground up.
+           </p>
 
             <div className="flex flex-wrap gap-4">
               <Link href="/programs">

@@ -285,7 +285,7 @@ export default function ProgramDetail() {
           <h2 className="text-3xl font-black text-[#0D2B4E] mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
             Explore Other Programs
           </h2>
-          <p className="text-gray-600 mb-6">We offer five interconnected programs to support your journey.</p>
+          <p className="text-gray-600 mb-6">We offer two focused programs to support your journey.</p>
           <Link href="/programs">
             <Button className="bg-[#0D2B4E] hover:bg-[#1a3f6f] text-white font-bold">
               View All Programs <ArrowRight className="ml-2 h-4 w-4" />
