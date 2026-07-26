@@ -126,7 +126,7 @@ export default function Home() {
               className="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.05] mb-6"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
-              Building Futures,{" "}
+              Changing Futures,{" "}
               <span className="text-[#D4A017]">One Community</span>{" "}
               at a Time
             </h1>
