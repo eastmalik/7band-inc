@@ -162,27 +162,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ══════════════════════════════════════════════
-          STATS — staggered stat blocks
-          ══════════════════════════════════════════════ */}
-      <section className="py-20 bg-[#F8F7F4]" ref={statsRef}>
-        <div className="container">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-10">
-            {stats.map((stat, i) => (
-              <div key={i} className="fade-up stat-block">
-                <div
-                  className="text-4xl lg:text-5xl font-black text-[#0D2B4E] mb-1"
-                  style={{ fontFamily: "'Playfair Display', serif" }}
-                >
-                  {stat.value}
-                </div>
-                <div className="font-semibold text-[#0D2B4E] text-sm mb-0.5">{stat.label}</div>
-                <div className="text-gray-500 text-xs">{stat.sub}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ══════════════════════════════════════════════
           MISSION — asymmetric editorial with photo
