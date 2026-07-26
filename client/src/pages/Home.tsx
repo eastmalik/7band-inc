@@ -220,7 +220,7 @@ export default function Home() {
                 className="text-4xl lg:text-5xl font-black text-[#0D2B4E] leading-tight"
                 style={{ fontFamily: "'Playfair Display', serif" }}
               >
-                Five Pathways to Opportunity
+                Two Pathways to Opportunity
               </h2>
             </div>
             <div className="lg:text-right">
@@ -238,8 +238,14 @@ export default function Home() {
           {/* Staggered program grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             {programs.map((program, i) => (
-              <Link key={i} href={program.href}>
-                <Card className={`fade-up card-lift h-full border-0 shadow-md overflow-hidden group cursor-pointer ${i === 0 ? "md:col-span-2 lg:col-span-1" : ""}`}>
+              <a
+                key={i}
+                href={program.href}
+                target={program.href.startsWith("http") ? "_blank" : undefined}
+                rel={program.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                className="block"
+              >
+                <Card className="fade-up card-lift h-full border-0 shadow-md overflow-hidden group cursor-pointer">
                   <CardContent className="p-0 h-full">
                     <div className={`${program.color} p-6 pb-4`}>
                       <program.icon className="h-8 w-8 text-white mb-3" />
@@ -262,7 +268,7 @@ export default function Home() {
                     </div>
                   </CardContent>
                 </Card>
-              </Link>
+              </a>
             ))}
           </div>
         </div>
