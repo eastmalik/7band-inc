@@ -60,12 +60,7 @@ export default function Navbar() {
     >
       <div className="container mx-auto flex items-center justify-between h-16 lg:h-20">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 group">
-          <img
-            src="/manus-storage/logo-7band_52529872.png"
-            alt="7Band Inc. Logo"
-            className="h-10 w-10 object-contain"
-          />
+       <Link href="/" className="flex items-center gap-3 group">
           <div>
             <span
               className={`font-bold text-xl tracking-tight ${textColor}`}
