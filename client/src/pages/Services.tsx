@@ -279,7 +279,7 @@ export default function Services() {
             </p>
             <p
               className="text-sm font-bold uppercase tracking-widest mb-10"
-              style={{ color: "#1A7A4A" }}
+              style={{ color: '#ffffff' }}
             >
               Business Consulting · Asset Protection · Generational Wealth
             </p>
