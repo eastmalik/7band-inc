@@ -151,15 +151,6 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Mini stat strip */}
-            <div className="flex gap-8 mt-14 pt-8 border-t border-white/15">
-              {stats.slice(0, 3).map((s, i) => (
-                <div key={i}>
-                  <div className="text-2xl font-black text-[#D4A017]" style={{ fontFamily: "'Playfair Display', serif" }}>{s.value}</div>
-                  <div className="text-white/60 text-xs mt-0.5">{s.label}</div>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
 
