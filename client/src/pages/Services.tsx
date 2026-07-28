@@ -362,6 +362,59 @@ export default function Services() {
         </div>
       </section>
 
+      {/* ── AGENCY SERVICES ── */}
+      <section className="py-20" style={{ background: "#f8f6f0" }}>
+        <div className="container">
+          <div className="grid lg:grid-cols-2 gap-16 items-start">
+            <div>
+              <div className="flex items-center gap-3 mb-5">
+                <div className="h-px w-12" style={{ background: "#1A7A4A" }} />
+                <span className="text-xs font-bold uppercase tracking-widest" style={{ color: "#1A7A4A" }}>
+                  7Band Financial Agency
+                </span>
+              </div>
+              <h2
+                className="text-4xl lg:text-5xl font-black leading-tight mb-6"
+                style={{ fontFamily: "'Playfair Display', serif", color: "#0D2B4E" }}
+              >
+                Our Financial Services
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-8">
+                Beyond The Flow, 7Band Financial Agency offers a full suite of financial services to protect, grow, and transfer your wealth. Each service is designed to work within The Flow framework.
+              </p>
+              <a
+                href={AGENCY_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-sm uppercase tracking-wide transition-all duration-200 hover:scale-105"
+                style={{ background: "#0D2B4E", color: "white" }}
+              >
+                Visit 7Band Financial Agency
+                <ExternalLink className="w-4 h-4" />
+              </a>
+            </div>
+            <div className="space-y-4">
+              {agencyServices.map((service, i) => (
+                <a
+                  key={i}
+                  href={service.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-between p-5 rounded-2xl border bg-white hover:shadow-lg transition-all duration-200 group"
+                  style={{ borderColor: "rgba(13,43,78,0.1)" }}
+                >
+                  <div>
+                    <p className="font-bold text-sm mb-1" style={{ color: "#0D2B4E" }}>{service.title}</p>
+                    <p className="text-gray-500 text-xs">{service.description}</p>
+                  </div>
+                  <ArrowRight className="w-5 h-5 flex-shrink-0 ml-4 transition-transform group-hover:translate-x-1" style={{ color: "#D4A017" }} />
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── THE 7 STEPS ── */}
       <section id="the-flow" className="py-24 bg-white">
         <div className="container">
@@ -489,59 +542,6 @@ export default function Services() {
                 <Play className="w-4 h-4" />
                 Reserve Your Spot
               </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── AGENCY SERVICES ── */}
-      <section className="py-20" style={{ background: "#f8f6f0" }}>
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
-            <div>
-              <div className="flex items-center gap-3 mb-5">
-                <div className="h-px w-12" style={{ background: "#1A7A4A" }} />
-                <span className="text-xs font-bold uppercase tracking-widest" style={{ color: "#1A7A4A" }}>
-                  7Band Financial Agency
-                </span>
-              </div>
-              <h2
-                className="text-4xl lg:text-5xl font-black leading-tight mb-6"
-                style={{ fontFamily: "'Playfair Display', serif", color: "#0D2B4E" }}
-              >
-                Our Financial Services
-              </h2>
-              <p className="text-gray-600 leading-relaxed mb-8">
-                Beyond The Flow, 7Band Financial Agency offers a full suite of financial services to protect, grow, and transfer your wealth. Each service is designed to work within The Flow framework.
-              </p>
-              <a
-                href={AGENCY_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-sm uppercase tracking-wide transition-all duration-200 hover:scale-105"
-                style={{ background: "#0D2B4E", color: "white" }}
-              >
-                Visit 7Band Financial Agency
-                <ExternalLink className="w-4 h-4" />
-              </a>
-            </div>
-            <div className="space-y-4">
-              {agencyServices.map((service, i) => (
-                <a
-                  key={i}
-                  href={service.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-between p-5 rounded-2xl border bg-white hover:shadow-lg transition-all duration-200 group"
-                  style={{ borderColor: "rgba(13,43,78,0.1)" }}
-                >
-                  <div>
-                    <p className="font-bold text-sm mb-1" style={{ color: "#0D2B4E" }}>{service.title}</p>
-                    <p className="text-gray-500 text-xs">{service.description}</p>
-                  </div>
-                  <ArrowRight className="w-5 h-5 flex-shrink-0 ml-4 transition-transform group-hover:translate-x-1" style={{ color: "#D4A017" }} />
-                </a>
-              ))}
             </div>
           </div>
         </div>
