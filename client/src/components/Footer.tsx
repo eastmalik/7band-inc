@@ -50,7 +50,7 @@ export default function Footer() {
               ))}
             </div>
            <p className="text-white/70 text-sm leading-relaxed mb-6">
-              Building futures through financial literacy, consumer education, and community empowerment.
+              Changing futures through financial literacy, education, and community empowerment.
            </p>
            <div className="flex gap-3">
              {[
@@ -124,18 +124,14 @@ export default function Footer() {
               Contact
             </h4>
             <div className="space-y-2">
-              <a href="mailto:info@7bandinc.org" className="flex items-center gap-2 text-white/70 hover:text-white text-sm transition-colors">
+              <a href="mailto:7bandfinancial@gmail.com" className="flex items-center gap-2 text-white/70 hover:text-white text-sm transition-colors">
                 <Mail className="h-3.5 w-3.5 shrink-0" />
                 info@7bandinc.org
               </a>
-              <a href="tel:+1234567890" className="flex items-center gap-2 text-white/70 hover:text-white text-sm transition-colors">
+              <a href="tel:+16787759800" className="flex items-center gap-2 text-white/70 hover:text-white text-sm transition-colors">
                 <Phone className="h-3.5 w-3.5 shrink-0" />
-                (123) 456-7890
+                678-775-9800
               </a>
-              <div className="flex items-start gap-2 text-white/70 text-sm">
-                <MapPin className="h-3.5 w-3.5 shrink-0 mt-0.5" />
-                <span>Community Center, Your City, ST 00000</span>
-              </div>
             </div>
           </div>
         </div>
