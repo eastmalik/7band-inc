@@ -52,18 +52,20 @@ export default function Footer() {
            <p className="text-white/70 text-sm leading-relaxed mb-6">
               Building futures through financial literacy, consumer education, and community empowerment.
            </p>
-            <div className="flex gap-3">
-              {[
-                { icon: Facebook, label: "Facebook" },
-                { icon: Twitter, label: "Twitter" },
-                { icon: Instagram, label: "Instagram" },
-                { icon: Linkedin, label: "LinkedIn" },
-                { icon: Youtube, label: "YouTube" },
-              ].map(({ icon: Icon, label }) => (
+           <div className="flex gap-3">
+             {[
+                { icon: Facebook, label: "Facebook", href: "https://www.facebook.com/profile.php?id=61556716666847" },
+                { icon: Twitter, label: "Twitter", href: "#" },
+                { icon: Instagram, label: "Instagram", href: "#" },
+                { icon: Linkedin, label: "LinkedIn", href: "#" },
+                { icon: Youtube, label: "YouTube", href: "https://www.youtube.com/@Malik_East" },
+              ].map(({ icon: Icon, label, href }) => (
                 <a
                   key={label}
-                  href="#"
+                  href={href}
                   aria-label={label}
+                  target={href !== "#" ? "_blank" : undefined}
+                  rel={href !== "#" ? "noopener noreferrer" : undefined}
                   className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#D4A017] flex items-center justify-center transition-colors duration-200"
                 >
                   <Icon className="h-4 w-4" />
