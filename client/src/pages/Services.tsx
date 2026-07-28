@@ -362,6 +362,36 @@ export default function Services() {
         </div>
       </section>
 
+      {/* ── THE 7 STEPS ── */}
+      <section id="the-flow" className="py-24 bg-white">
+        <div className="container">
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <div className="flex items-center justify-center gap-3 mb-5">
+              <div className="h-px w-12" style={{ background: "#D4A017" }} />
+              <span className="text-xs font-bold uppercase tracking-widest" style={{ color: "#D4A017" }}>
+                The Proven System
+              </span>
+              <div className="h-px w-12" style={{ background: "#D4A017" }} />
+            </div>
+            <h2
+              className="text-4xl lg:text-5xl font-black leading-tight mb-4"
+              style={{ fontFamily: "'Playfair Display', serif", color: "#0D2B4E" }}
+            >
+              Seven Steps. One Unbreakable System.
+            </h2>
+            <p className="text-gray-500 leading-relaxed">
+              The Flow is a complete, integrated system — each step activates the next. This is not a shortcut. It is a blueprint built on principles that have created generational wealth for decades.
+            </p>
+          </div>
+
+          <div className="max-w-3xl mx-auto space-y-6">
+            {flowSteps.map((step, index) => (
+              <StepCard key={step.number} step={step} index={index} />
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── WEEKLY WEBINAR FEATURE ── */}
       <section className="py-20" style={{ background: "#0D2B4E" }}>
         <div className="container">
@@ -460,36 +490,6 @@ export default function Services() {
                 Reserve Your Spot
               </a>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── THE 7 STEPS ── */}
-      <section id="the-flow" className="py-24 bg-white">
-        <div className="container">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <div className="flex items-center justify-center gap-3 mb-5">
-              <div className="h-px w-12" style={{ background: "#D4A017" }} />
-              <span className="text-xs font-bold uppercase tracking-widest" style={{ color: "#D4A017" }}>
-                The Proven System
-              </span>
-              <div className="h-px w-12" style={{ background: "#D4A017" }} />
-            </div>
-            <h2
-              className="text-4xl lg:text-5xl font-black leading-tight mb-4"
-              style={{ fontFamily: "'Playfair Display', serif", color: "#0D2B4E" }}
-            >
-              Seven Steps. One Unbreakable System.
-            </h2>
-            <p className="text-gray-500 leading-relaxed">
-              The Flow is a complete, integrated system — each step activates the next. This is not a shortcut. It is a blueprint built on principles that have created generational wealth for decades.
-            </p>
-          </div>
-
-          <div className="max-w-3xl mx-auto space-y-6">
-            {flowSteps.map((step, index) => (
-              <StepCard key={step.number} step={step} index={index} />
-            ))}
           </div>
         </div>
       </section>
