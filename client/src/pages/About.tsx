@@ -21,10 +21,9 @@ const values = [
 ];
 
 const leadership = [
-  { name: "Executive Director", title: "Executive Director", initials: "ED", bio: "Passionate community leader with over 15 years of experience in nonprofit management and community development." },
-  { name: "Board Chair", title: "Board of Directors Chair", initials: "BC", bio: "Dedicated advocate for educational equity and economic empowerment in underserved communities." },
-  { name: "Program Director", title: "Director of Programs", initials: "PD", bio: "Expert in curriculum development and community-based education with a focus on financial literacy." },
-  { name: "Development Director", title: "Director of Development", initials: "DD", bio: "Experienced fundraiser and partnership builder committed to sustainable nonprofit growth." },
+  { name: "Malik East", title: "President", initials: "ME", bio: "Founder of 7Band Inc., dedicated to teaching financial literacy to families and individuals in the community, schools, and churches." },
+  { name: "Mickala Johnson", title: "Secretary", initials: "MJ", bio: "Dedicated advocate for educational equity and economic empowerment in underserved communities." },
+  { name: "Haylie Spight", title: "Treasury", initials: "HS", bio: "Expert in financial management and community-based education with a focus on sustainable nonprofit growth." },
 ];
 
 export default function About() {
@@ -57,7 +56,7 @@ export default function About() {
               Our Story & Mission
             </h1>
             <p className="text-white/75 text-xl leading-relaxed">
-              7Band Inc. was founded on the belief that every community member deserves access to the education, tools, and support needed to build a better future.
+              7Band Inc. was founded in 2022 by Malik East out of the desire to teach financial literacy to the families and individuals in the community, schools, and churches.
             </p>
           </div>
         </div>
@@ -128,7 +127,7 @@ export default function About() {
                 How 7Band Inc. Began
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
-                <p>7Band Inc. was born from a simple but powerful observation: that the communities with the greatest need for financial education and entrepreneurship support were often the least served by existing programs.</p>
+                <p>7Band Inc. was born from a powerful observation: that the communities with the greatest need for financial education and entrepreneurship support were often the least served by existing programs.</p>
                 <p>Our founders — community members themselves — came together with a shared vision: to build an organization that would meet people where they are, speak their language, and provide the practical tools needed to create real, lasting change.</p>
                 <p>The name "7Band" reflects our belief in the seven interconnected bands of opportunity that, when woven together, create the fabric of a thriving community: education, financial literacy, entrepreneurship, digital access, youth development, community connection, and civic engagement.</p>
               </div>
@@ -149,7 +148,7 @@ export default function About() {
               Dedicated professionals committed to our mission of community empowerment.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-3 gap-6 max-w-3xl">
             {leadership.map((person, i) => (
               <Card key={i} className="card-lift border-0 shadow-md text-center">
                 <CardContent className="p-6">
