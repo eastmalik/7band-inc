@@ -24,8 +24,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const programs = [
-  { icon: BookOpen, title: "Financial Literacy",       desc: "Budget, save, invest, and plan for a secure financial future. We equip participants with the tools to take control of their financial lives.", href: "/programs/financial-literacy", color: "bg-[#1A7A4A]" },
-  { icon: Star,     title: "The Smart Beauty Project", desc: "Empowering Black women through financial literacy and consumer education — building wealth one beauty choice at a time.", href: "https://smartbeauty-essknvt9.manus.space/", color: "bg-[#0D2B4E]" },
+  { icon: BookOpen, title: "Financial Literacy",       desc: "We equip participants with the resources to take control of their financial lives.", href: "/programs/financial-literacy", color: "bg-[#1A7A4A]" },
+  { icon: Star,     title: "The Smart Beauty Project", desc: "Empowering Black women through financial literacy and consumer education.", href: "https://smartbeauty-essknvt9.manus.space/", color: "bg-[#0D2B4E]" },
 ];
 
 const stats = [
@@ -225,7 +225,7 @@ export default function Home() {
             </div>
             <div className="lg:text-right">
               <p className="text-gray-600 text-base leading-relaxed mb-4">
-                Interconnected programs designed to create comprehensive, lasting impact.
+                
               </p>
               <Link href="/programs">
                 <Button variant="outline" className="border-[#0D2B4E]/30 text-[#0D2B4E] hover:bg-[#0D2B4E] hover:text-white">
@@ -300,7 +300,7 @@ export default function Home() {
             Ready to Make a Difference?
           </h2>
           <p className="text-white/80 text-lg max-w-2xl mx-auto mb-10">
-            Your support helps us expand our programs, reach more families, and create lasting change in our community.
+            Your support helps us reach more families, and create change in our community.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link href="/donate">
