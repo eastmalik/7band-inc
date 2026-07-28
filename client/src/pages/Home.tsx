@@ -184,7 +184,7 @@ export default function Home() {
                 "Every person deserves the tools and knowledge to build a secure, prosperous future — regardless of their background."
               </p>
               <p className="text-gray-600 leading-relaxed mb-8">
-                7Band Inc. is a nonprofit organization dedicated to breaking cycles of poverty and inequality by providing accessible education, mentorship, and resources to underserved communities.
+                7Band Inc. is a nonprofit organization dedicated to breaking cycles of poverty and inequality by providing education, webinars, workshops and resources to underserved communities.
               </p>
               <Link href="/about">
                 <Button className="bg-[#0D2B4E] hover:bg-[#1a3f6f] text-white font-semibold">
