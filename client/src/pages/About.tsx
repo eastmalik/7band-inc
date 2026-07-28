@@ -13,8 +13,8 @@ import Footer from "@/components/Footer";
 
 const values = [
   { icon: Shield, title: "Integrity", desc: "We operate with transparency, accountability, and the highest ethical standards in all we do." },
-  { icon: Eye, title: "Vision", desc: "We see the potential in every person and community, and work tirelessly to help that potential flourish." },
-  { icon: Heart, title: "Compassion", desc: "We lead with empathy, meeting people where they are and honoring their dignity and strength." },
+  { icon: Eye, title: "Vision", desc: "We see the potential in every person and community, and work to help that person flourish." },
+  { icon: Heart, title: "Compassion", desc: "We lead with empathy, meeting people where they are and honoring their desires and dreams." },
   { icon: Users, title: "Community", desc: "We believe in the power of collective action and the strength that comes from working together." },
   { icon: Award, title: "Excellence", desc: "We hold ourselves to the highest standards in program quality, impact measurement, and service delivery." },
   { icon: BookOpen, title: "Education", desc: "We believe education is the most powerful tool for creating lasting, generational change." },
@@ -72,7 +72,7 @@ export default function About() {
                 Why We Exist
               </h2>
               <p className="text-white/80 leading-relaxed text-lg">
-                To empower individuals and families in underserved communities through accessible education, financial literacy, entrepreneurship support, and digital skills training — creating pathways to economic stability and opportunity.
+                To empower individuals and families in underserved communities with financial literacy, knowledge, and connections they might have missed or never been taught.
               </p>
             </div>
             <div className="bg-[#1A7A4A] rounded-2xl p-10">
@@ -81,7 +81,7 @@ export default function About() {
                 Where We're Going
               </h2>
               <p className="text-white/80 leading-relaxed text-lg">
-                A world where every community has the knowledge, resources, and connections needed to thrive — where zip code no longer determines destiny, and every person can build the future they deserve.
+                A world where every underserved individual, family, and community has the knowledge, resources, and connections needed to make their desires and dreams come true. Every person can build the future they deserve.
               </p>
             </div>
           </div>
