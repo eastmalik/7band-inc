@@ -50,7 +50,7 @@ export default function Footer() {
               ))}
             </div>
            <p className="text-white/70 text-sm leading-relaxed mb-6">
-              Building futures through financial literacy, consumer education, and community empowerment.
+              Changing futures through financial literacy, education, and community empowerment.
            </p>
            <div className="flex gap-3">
              {[
