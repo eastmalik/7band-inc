@@ -77,9 +77,8 @@ function useFadeUp() {
 
 export default function Home() {
   const statsRef       = useFadeUp();
-  const programsRef    = useFadeUp();
-  const testimonialsRef = useFadeUp();
-  const newsRef        = useFadeUp();
+  const newsRef = useFadeUp();
+  const programsRef = useFadeUp();
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -325,47 +324,6 @@ export default function Home() {
       {/* ══════════════════════════════════════════════
           TESTIMONIALS — staggered editorial cards
           ══════════════════════════════════════════════ */}
-      <section className="py-24 bg-white" ref={testimonialsRef}>
-        <div className="container">
-          <div className="grid lg:grid-cols-3 gap-8 mb-12 items-end">
-            <div className="lg:col-span-2">
-              <p className="text-[#1A7A4A] font-semibold text-xs uppercase tracking-widest mb-3">Community Voices</p>
-              <h2
-                className="text-4xl font-black text-[#0D2B4E]"
-                style={{ fontFamily: "'Playfair Display', serif" }}
-              >
-                Stories of Impact
-              </h2>
-            </div>
-          </div>
-          <div className="grid md:grid-cols-3 gap-6">
-            {testimonials.map((t, i) => (
-              <div
-                key={i}
-                className={`fade-up bg-[#F8F7F4] rounded-2xl p-8 relative ${i === 1 ? "md:mt-8" : ""}`}
-              >
-                {/* Gold quote mark */}
-                <Quote className="h-8 w-8 text-[#D4A017] mb-4 opacity-80" />
-                <div className="flex gap-1 mb-4">
-                  {Array.from({ length: 5 }).map((_, j) => (
-                    <Star key={j} className="h-3.5 w-3.5 fill-[#D4A017] text-[#D4A017]" />
-                  ))}
-                </div>
-                <p className="text-gray-700 leading-relaxed mb-6 italic text-sm">"{t.quote}"</p>
-                <div className="flex items-center gap-3 pt-4 border-t border-gray-200">
-                  <div className="w-10 h-10 rounded-full bg-[#0D2B4E] flex items-center justify-center text-white font-bold text-sm shrink-0">
-                    {t.initials}
-                  </div>
-                  <div>
-                    <div className="font-semibold text-[#0D2B4E] text-sm">{t.name}</div>
-                    <div className="text-gray-500 text-xs">{t.role}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ══════════════════════════════════════════════
           NEWS — editorial card grid
