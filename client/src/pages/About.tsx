@@ -1,7 +1,7 @@
 /**
  * 7Band Inc. About Page
  * Design: Elevated Civic — Deep Navy, Emerald Green, Warm Gold
- * Sections: Hero, Mission/Vision/Values, History, Leadership, Financial Transparency
+ * Sections: Hero, Mission/Vision/Values, History, Leadership,
  */
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
@@ -134,42 +134,6 @@ export default function About() {
                 </CardContent>
               </Card>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Financial Transparency */}
-      <section className="py-20 bg-[#0D2B4E]" id="transparency">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="band-stripe band-stripe-light mb-5">
-                {[28, 20, 16, 24, 12, 18, 22].map((w, i) => (
-                  <span key={i} style={{ width: `${w}px` }} />
-                ))}
-              </div>
-              <p className="text-[#D4A017] font-semibold text-xs uppercase tracking-widest mb-3">Accountability</p>
-              <h2 className="text-4xl font-black text-white mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
-                Financial Transparency
-              </h2>
-              <p className="text-white/75 leading-relaxed">
-                We are committed to full transparency in our finances and operations. Our donors and community deserve to know how their contributions are used.
-              </p>
-            </div>
-            <div className="grid grid-cols-3 gap-4">
-              {[
-                { label: "Annual Report",            sub: "Full organizational report",       icon: "📄" },
-                { label: "IRS Determination Letter", sub: "501(c)(3) status documentation",  icon: "📋" },
-                { label: "Financial Statements",     sub: "Audited financial records",        icon: "📊" },
-              ].map((doc, i) => (
-                <div key={i} className="bg-white/10 rounded-xl p-5 text-center hover:bg-white/15 transition-colors cursor-pointer">
-                  <div className="text-3xl mb-3">{doc.icon}</div>
-                  <h4 className="text-white font-semibold text-sm mb-1">{doc.label}</h4>
-                  <p className="text-white/60 text-xs mb-3">{doc.sub}</p>
-                  <span className="text-[#D4A017] text-xs font-semibold">Coming Soon</span>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
