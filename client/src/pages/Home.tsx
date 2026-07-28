@@ -77,7 +77,6 @@ function useFadeUp() {
 
 export default function Home() {
   const statsRef       = useFadeUp();
-  const newsRef = useFadeUp();
   const programsRef = useFadeUp();
 
   return (
@@ -324,61 +323,6 @@ export default function Home() {
       {/* ══════════════════════════════════════════════
           TESTIMONIALS — staggered editorial cards
           ══════════════════════════════════════════════ */}
-
-      {/* ══════════════════════════════════════════════
-          NEWS — editorial card grid
-          ══════════════════════════════════════════════ */}
-      <section className="py-24 bg-[#F8F7F4]" ref={newsRef}>
-        <div className="container">
-          <div className="flex items-end justify-between mb-12">
-            <div>
-              <p className="text-[#1A7A4A] font-semibold text-xs uppercase tracking-widest mb-3">Stay Informed</p>
-              <h2
-                className="text-4xl font-black text-[#0D2B4E]"
-                style={{ fontFamily: "'Playfair Display', serif" }}
-              >
-                Latest News
-              </h2>
-            </div>
-            <Link href="/news">
-              <Button variant="ghost" className="text-[#0D2B4E] hover:text-[#1A7A4A] font-semibold hidden sm:flex">
-                View All News <ChevronRight className="ml-1 h-4 w-4" />
-              </Button>
-            </Link>
-          </div>
-          <div className="grid md:grid-cols-3 gap-6">
-            {news.map((item, i) => (
-              <article key={i} className="fade-up bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group cursor-pointer">
-                {/* Category band */}
-                <div className="band-rule h-1.5">
-                  {Array.from({ length: 7 }).map((_, j) => <span key={j} />)}
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center gap-3 mb-4">
-                    <span className={`text-xs font-semibold px-2.5 py-1 rounded-full ${categoryColors[item.category] || "bg-gray-100 text-gray-600"}`}>
-                      {item.category}
-                    </span>
-                    <span className="text-gray-400 text-xs flex items-center gap-1">
-                      <Calendar className="h-3 w-3" /> {item.date}
-                    </span>
-                  </div>
-                  <h3
-                    className="font-bold text-[#0D2B4E] text-lg leading-snug mb-3 group-hover:text-[#1A7A4A] transition-colors"
-                    style={{ fontFamily: "'Playfair Display', serif" }}
-                  >
-                    {item.title}
-                  </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed mb-4">{item.excerpt}</p>
-                  <span className="text-[#1A7A4A] font-semibold text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
-                    Read More <ArrowRight className="h-3.5 w-3.5" />
-                  </span>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ══════════════════════════════════════════════
           NEWSLETTER — navy band
           ══════════════════════════════════════════════ */}
