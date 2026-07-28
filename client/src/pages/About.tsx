@@ -109,32 +109,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* History */}
-      <section className="py-24 bg-[#F8F7F4]">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="photo-editorial relative">
-              <img
-                src="/manus-storage/hero-community_2f44b0cc.jpg"
-                alt="Community members at a 7Band Inc. event"
-                className="relative z-10 w-full rounded-2xl shadow-xl object-cover aspect-[4/3]"
-              />
-              <div className="absolute -bottom-4 left-8 right-8 h-2 bg-[#D4A017] rounded-full z-20 opacity-80" />
-            </div>
-            <div>
-              <p className="text-[#1A7A4A] font-semibold text-xs uppercase tracking-widest mb-3">Our Journey</p>
-              <h2 className="text-4xl font-black text-[#0D2B4E] mb-6 heading-underline" style={{ fontFamily: "'Playfair Display', serif" }}>
-                How 7Band Inc. Began
-              </h2>
-              <div className="space-y-4 text-gray-600 leading-relaxed">
-                <p>Our founders — community members themselves — came together with a shared vision: to build an organization that would meet people where they are, speak their language, and provide the resources and services needed to create real, lasting change.</p>
-                <p>The name "7Band" reflects our belief in the seven interconnected bands of opportunity that, when woven together, create the fabric of a thriving community: education, financial literacy, entrepreneurship, digital access, youth development, community connection, and civic engagement.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Leadership */}
       <section className="py-24 bg-white" id="leadership">
         <div className="container">
