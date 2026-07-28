@@ -127,8 +127,7 @@ export default function About() {
                 How 7Band Inc. Began
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
-                <p>7Band Inc. was born from a powerful observation: that the communities with the greatest need for financial education and entrepreneurship support were often the least served by existing programs.</p>
-                <p>Our founders — community members themselves — came together with a shared vision: to build an organization that would meet people where they are, speak their language, and provide the practical tools needed to create real, lasting change.</p>
+                <p>Our founders — community members themselves — came together with a shared vision: to build an organization that would meet people where they are, speak their language, and provide the resources and services needed to create real, lasting change.</p>
                 <p>The name "7Band" reflects our belief in the seven interconnected bands of opportunity that, when woven together, create the fabric of a thriving community: education, financial literacy, entrepreneurship, digital access, youth development, community connection, and civic engagement.</p>
               </div>
             </div>
