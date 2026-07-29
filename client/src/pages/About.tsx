@@ -121,16 +121,16 @@ export default function About() {
               Dedicated professionals committed to our mission of community empowerment.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-6 max-w-3xl">
+          <div className="grid md:grid-cols-3 gap-8">
             {leadership.map((person, i) => (
-              <Card key={i} className="card-lift border-0 shadow-md text-center">
+              <Card key={i} className="card-lift border-0 shadow-md text-center hover:shadow-xl transition-shadow">
                 <CardContent className="p-6">
                   <div className="w-20 h-20 rounded-full bg-[#0D2B4E] flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
                     {person.initials}
                   </div>
                   <h3 className="font-bold text-[#0D2B4E] text-lg mb-1">{person.name}</h3>
                   <p className="text-[#1A7A4A] text-sm font-semibold mb-3">{person.title}</p>
-                  <p className="text-gray-600 text-sm leading-relaxed">{person.bio}</p>
+                  <p className="text-gray-600 text-sm leading-relaxed px-2">{person.bio}</p>
                 </CardContent>
               </Card>
             ))}
