@@ -130,7 +130,7 @@ export default function Home() {
             </h1>
 
            <p className="text-lg md:text-xl text-white/75 leading-relaxed mb-10 max-w-xl">
-              7Band Inc. empowers individuals and families through financial literacy and consumer education — creating lasting change from the ground up.
+              7Band Inc. empowers individuals and families through financial literacy and education
            </p>
 
             <div className="flex flex-wrap gap-4">
