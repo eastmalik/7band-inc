@@ -5,12 +5,10 @@ import {
   CheckCircle,
   ChevronDown,
   ExternalLink,
-  Play,
-  Star,
   TrendingUp,
   Video,
-  Zap,
 } from "lucide-react";
+import { Play, Star } from "lucide-react";
 
 // ============================================================
 // DESIGN: Elevated Civic — Deep Navy #0D2B4E, Gold #D4A017,
@@ -223,148 +221,24 @@ export default function Services() {
   return (
     <div className="min-h-screen bg-white" style={{ fontFamily: "'Inter', sans-serif" }}>
 
-      {/* ── HERO ── */}
+      {/* ── AGENCY SERVICES (now the top section / hero) ── */}
       <section
-        className="relative min-h-[70vh] flex items-center overflow-hidden"
-        style={{
-          background: "linear-gradient(135deg, #0D2B4E 0%, #0a2240 40%, #051525 100%)",
-        }}
+        className="relative pt-32 pb-20 overflow-hidden"
+        style={{ background: "linear-gradient(135deg, #0D2B4E 0%, #0a2240 40%, #051525 100%)" }}
       >
-        {/* Background image overlay */}
-        <div
-          className="absolute inset-0 opacity-20"
-          style={{
-            backgroundImage: "url('/manus-storage/flow-hero_494de596.jpg')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        />
         {/* 7-band stripe motif */}
         <div className="absolute top-0 left-0 w-2 h-full flex flex-col">
           {["#0D2B4E","#1A7A4A","#D4A017","#0D2B4E","#1A7A4A","#D4A017","#0D2B4E"].map((c, i) => (
             <div key={i} className="flex-1" style={{ background: c }} />
           ))}
         </div>
-        <div className="absolute top-0 right-0 w-1 h-full flex flex-col opacity-40">
-          {["#D4A017","#1A7A4A","#0D2B4E","#D4A017","#1A7A4A","#0D2B4E","#D4A017"].map((c, i) => (
-            <div key={i} className="flex-1" style={{ background: c }} />
-          ))}
-        </div>
-
-        <div className="container relative z-10 py-24">
-          <div className="max-w-3xl">
-            {/* Breadcrumb */}
-            <div className="flex items-center gap-2 mb-6">
-              <Link href="/" className="text-white/50 hover:text-white text-sm transition-colors">Home</Link>
-              <span className="text-white/30 text-sm">/</span>
-              <span className="text-sm font-medium" style={{ color: "#D4A017" }}>Services</span>
-            </div>
-
-            {/* Label */}
-            <div className="flex items-center gap-3 mb-5">
-              <div className="h-px w-12" style={{ background: "#D4A017" }} />
-              <span className="text-xs font-bold uppercase tracking-widest" style={{ color: "#D4A017" }}>
-                7Band Financial Agency · The Flow
-              </span>
-            </div>
-
-            <h1
-              className="text-5xl lg:text-7xl font-black text-white leading-none mb-6"
-              style={{ fontFamily: "'Playfair Display', serif" }}
-            >
-              The Flow
-            </h1>
-            <p className="text-xl text-white/70 leading-relaxed mb-4 max-w-2xl">
-              A proven 7-step development incubator that transforms your family legacy.
-            </p>
-            <p
-              className="text-sm font-bold uppercase tracking-widest mb-10"
-              style={{ color: '#ffffff' }}
-            >
-              Business Consulting · Asset Protection · Generational Wealth
-            </p>
-
-            <div className="flex flex-wrap gap-4">
-              <a
-                href={ZOOM_WEBINAR_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-sm uppercase tracking-wide transition-all duration-200 hover:scale-105 hover:shadow-lg"
-                style={{ background: "#D4A017", color: "#0D2B4E" }}
-              >
-                <Video className="w-4 h-4" />
-                Register for Free Webinar
-              </a>
-              <a
-                href="#the-flow"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-sm uppercase tracking-wide border border-white/30 text-white hover:bg-white/10 transition-all duration-200"
-              >
-                Explore The 7 Steps
-                <ChevronDown className="w-4 h-4" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── BRIDGE SECTION ── */}
-      <section className="py-20" style={{ background: "#f8f6f0" }}>
         <div className="container">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <div className="flex items-center gap-3 mb-5">
-                <div className="h-px w-12" style={{ background: "#1A7A4A" }} />
-                <span className="text-xs font-bold uppercase tracking-widest" style={{ color: "#1A7A4A" }}>
-                  Education Meets Action
-                </span>
-              </div>
-              <h2
-                className="text-4xl lg:text-5xl font-black leading-tight mb-6"
-                style={{ fontFamily: "'Playfair Display', serif", color: "#0D2B4E" }}
-              >
-                From Knowledge to Legacy
-              </h2>
-              <p className="text-gray-600 leading-relaxed mb-4">
-                <strong>7Band Inc.</strong> teaches the <em>why</em> — the financial literacy, the mindset, the foundation. Once you understand the principles, the next step is putting them to work.
-              </p>
-              <p className="text-gray-600 leading-relaxed mb-6">
-                <strong>7Band Financial Agency</strong> delivers the <em>how</em> — the real-world systems, structures, and strategies that high-net-worth individuals have used for generations. <strong>The Flow</strong> is the bridge that connects both.
-              </p>
-              <div className="flex items-center gap-4 p-4 rounded-2xl" style={{ background: "#0D2B4E10", border: "1px solid #0D2B4E20" }}>
-                <TrendingUp className="w-8 h-8 flex-shrink-0" style={{ color: "#D4A017" }} />
-                <p className="text-sm font-medium text-gray-700">
-                  The Flow is not a shortcut — it is a blueprint. Each step builds upon the last, creating an unbreakable system for generational wealth.
-                </p>
-              </div>
-            </div>
-            <div className="relative">
-              <div
-                className="rounded-3xl overflow-hidden shadow-2xl aspect-[4/3]"
-                style={{ border: "4px solid #D4A01730" }}
-              >
-                <img
-                  src="/manus-storage/flow-webinar_8156bd1e.jpg"
-                  alt="The Flow Webinar"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              {/* Floating badge */}
-              <div
-                className="absolute -bottom-6 -left-6 p-4 rounded-2xl shadow-xl"
-                style={{ background: "#0D2B4E", border: "2px solid #D4A017" }}
-              >
-                <p className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: "#D4A017" }}>The Flow</p>
-                <p className="text-white font-black text-lg" style={{ fontFamily: "'Playfair Display', serif" }}>7 Steps.</p>
-                <p className="text-white/70 text-xs">One Unbreakable System.</p>
-              </div>
-            </div>
+          {/* Breadcrumb */}
+          <div className="flex items-center gap-2 mb-8">
+            <Link href="/" className="text-white/50 hover:text-white text-sm transition-colors">Home</Link>
+            <span className="text-white/30 text-sm">/</span>
+            <span className="text-sm font-medium" style={{ color: "#D4A017" }}>Services</span>
           </div>
-        </div>
-      </section>
-
-      {/* ── AGENCY SERVICES ── */}
-      <section className="py-20" style={{ background: "#f8f6f0" }}>
-        <div className="container">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div>
               <div className="flex items-center gap-3 mb-5">
@@ -373,13 +247,13 @@ export default function Services() {
                   7Band Financial Agency
                 </span>
               </div>
-              <h2
-                className="text-4xl lg:text-5xl font-black leading-tight mb-6"
-                style={{ fontFamily: "'Playfair Display', serif", color: "#0D2B4E" }}
+              <h1
+                className="text-5xl lg:text-6xl font-black leading-tight mb-6 text-white"
+                style={{ fontFamily: "'Playfair Display', serif" }}
               >
                 Our Financial Services
-              </h2>
-              <p className="text-gray-600 leading-relaxed mb-8">
+              </h1>
+              <p className="text-white/75 leading-relaxed mb-8 text-lg">
                 Beyond The Flow, 7Band Financial Agency offers a full suite of financial services to protect, grow, and transfer your wealth. Each service is designed to work within The Flow framework.
               </p>
               <a
@@ -387,7 +261,7 @@ export default function Services() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-sm uppercase tracking-wide transition-all duration-200 hover:scale-105"
-                style={{ background: "#0D2B4E", color: "white" }}
+                style={{ background: "#D4A017", color: "#0D2B4E" }}
               >
                 Visit 7Band Financial Agency
                 <ExternalLink className="w-4 h-4" />
@@ -400,14 +274,14 @@ export default function Services() {
                   href={service.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-between p-5 rounded-2xl border bg-white hover:shadow-lg transition-all duration-200 group"
-                  style={{ borderColor: "rgba(13,43,78,0.1)" }}
+                  className="flex items-center justify-between p-5 rounded-2xl border hover:shadow-lg transition-all duration-200 group"
+                  style={{ background: "rgba(255,255,255,0.07)", borderColor: "rgba(255,255,255,0.15)" }}
                 >
                   <div>
-                    <p className="font-bold text-sm mb-1" style={{ color: "#0D2B4E" }}>{service.title}</p>
-                    <p className="text-gray-500 text-xs">{service.description}</p>
+                    <p className="font-bold text-sm mb-1 text-white">{service.title}</p>
+                    <p className="text-white/55 text-xs">{service.description}</p>
                   </div>
-                  <ArrowRight className="w-5 h-5 flex-shrink-0 ml-4 transition-transform group-hover:translate-x-1" style={{ color: "#D4A017" }} />
+                  <ArrowRight className="w-5 h-5 flex-shrink-0 ml-4 transition-transform group-hover:translate-x-1 text-[#D4A017]" />
                 </a>
               ))}
             </div>
