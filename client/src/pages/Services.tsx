@@ -288,7 +288,7 @@ export default function Services() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
             {flowSteps.map((step, index) => (
               <StepCard key={step.number} step={step} index={index} />
             ))}
