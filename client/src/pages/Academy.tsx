@@ -132,15 +132,11 @@ export default function Academy() {
               ))}
             </div>
 
-            <Badge className="bg-[#D4A017]/20 text-[#D4A017] border-[#D4A017]/30 mb-4 text-xs font-semibold tracking-wider uppercase">
-              Paid Community · $50/Month
-            </Badge>
-
             <h1
               className="text-5xl lg:text-7xl font-black text-white mb-6 leading-tight"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
-              Financial Literacy
+              A Financial Literacy
               <br />
               <span style={{ color: "#D4A017" }}>Academy</span>
             </h1>
