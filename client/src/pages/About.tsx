@@ -112,12 +112,12 @@ export default function About() {
       {/* Leadership */}
       <section className="py-24 bg-white" id="leadership">
         <div className="container">
-          <div className="mb-12">
+          <div className="mb-12 text-center">
             <p className="text-[#1A7A4A] font-semibold text-xs uppercase tracking-widest mb-3">The Team</p>
             <h2 className="text-4xl font-black text-[#0D2B4E] heading-underline" style={{ fontFamily: "'Playfair Display', serif" }}>
               Our Leadership
             </h2>
-            <p className="text-gray-600 mt-6 max-w-xl">
+            <p className="text-gray-600 mt-6 max-w-xl mx-auto">
               Dedicated professionals committed to our mission of community empowerment.
             </p>
           </div>
