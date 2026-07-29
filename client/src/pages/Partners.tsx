@@ -17,12 +17,7 @@ const partnerTypes = [
 ];
 
 const currentPartners = [
-  { initials: "CF", name: "Community First Bank",     type: "Corporate",  color: "bg-[#0D2B4E]", desc: "Financial sponsor and volunteer partner" },
-  { initials: "LH", name: "Lincoln High School",      type: "School",     color: "bg-[#1A7A4A]", desc: "Youth program delivery partner" },
-  { initials: "CC", name: "City Community Foundation", type: "Community", color: "bg-[#0D2B4E]", desc: "Grant funding and network partner" },
-  { initials: "FU", name: "First Unity Church",        type: "Faith-Based",color: "bg-[#1A7A4A]", desc: "Event space and volunteer partner" },
-  { initials: "MB", name: "Metro Business Alliance",   type: "Corporate",  color: "bg-[#0D2B4E]", desc: "Entrepreneurship mentorship partner" },
-  { initials: "SU", name: "State University Extension","type": "School",   color: "bg-[#1A7A4A]", desc: "Digital literacy curriculum partner" },
+  { initials: "WC", name: "We Care Church",            type: "Faith-Based",color: "bg-[#1A7A4A]", desc: "Faith-based community partner" },
 ];
 
 const typeColors: Record<string, string> = {
@@ -157,4 +152,3 @@ export default function Partners() {
     </div>
   );
 }
-
