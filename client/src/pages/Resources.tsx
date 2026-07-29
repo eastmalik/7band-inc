@@ -11,8 +11,14 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { toast } from "sonner";
 
-const guides: { title: string; category: string; type: string; desc: string }[] = [
-  // Real guides will be added here
+const guides: { title: string; category: string; type: string; desc: string; url: string }[] = [
+  {
+    title: "The American Money Tree: How Indexed Universal Life (IUL) Works",
+    category: "Financial Literacy",
+    type: "Guide",
+    desc: "A visual guide to how IUL policies grow tax-free, protect your principal with a 0% floor, and give you tax-free access to cash for college, retirement, business capital, and emergencies.",
+    url: "/manus-storage/Indexed_Universal_Life_Policy_Guide_8de18451.webp",
+  },
 ];
 
 const videos = [
@@ -87,12 +93,14 @@ export default function Resources() {
                   <h3 className="font-bold text-[#0D2B4E] text-lg mb-2 leading-snug">{guide.title}</h3>
                   <p className="text-gray-600 text-sm leading-relaxed mb-4">{guide.desc}</p>
                   <Button
-                    variant="outline"
-                    size="sm"
-                    className="border-[#0D2B4E]/30 text-[#0D2B4E] w-full"
-                    onClick={() => toast.info("Download coming soon! Sign up for our newsletter to be notified.")}
+                   variant="outline"
+                   size="sm"
+                   className="border-[#0D2B4E]/30 text-[#0D2B4E] w-full"
+                    asChild
                   >
-                    <Download className="mr-2 h-3.5 w-3.5" /> Download PDF
+                    <a href={guide.url} target="_blank" rel="noopener noreferrer" download>
+                      <Download className="mr-2 h-3.5 w-3.5" /> View & Download
+                    </a>
                   </Button>
                 </CardContent>
               </Card>
@@ -161,3 +169,4 @@ export default function Resources() {
     </div>
   );
 }
+
