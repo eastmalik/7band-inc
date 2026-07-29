@@ -337,7 +337,7 @@ export default function Services() {
               </p>
               <ul className="space-y-3 mb-8">
                 {[
-                  "Live walkthrough of all 7 steps of The Flow",
+                  "Live walkthrough of all 7 levels of The Flow",
                   "Q&A with a 7Band Financial Agency consultant",
                   "Real strategies used by high-net-worth individuals",
                   "Free to attend — no obligation",
