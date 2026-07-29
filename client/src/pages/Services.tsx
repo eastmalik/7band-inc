@@ -26,8 +26,7 @@ const flowSteps = [
     number: "01",
     title: "Credit Score",
     headline: "Your Credit Score Is the Foundation of Everything",
-    description:
-      "Before any wealth can be built, your credit profile must be strong. We help you understand, repair, and optimize both your personal and business credit so every door — capital, grants, funding — is open to you.",
+    description: "",
     outcome: "A strong credit profile that opens doors to capital, grants, and business funding.",
     icon: "🏛️",
     color: "#1A7A4A",
@@ -36,8 +35,7 @@ const flowSteps = [
     number: "02",
     title: "Business Structure",
     headline: "A Business Without Structure Is a Liability, Not an Asset",
-    description:
-      "Your LLC alone is not enough. We build the full legal and operational architecture your business needs: Articles of Incorporation, EIN & D.U.N.S., Operating Agreement, Business Bank Account, Address, Email, Phone, Website & App.",
+    description: "",
     outcome: "A credible, fundable business entity that stands on its own — separate from you personally.",
     icon: "🏗️",
     color: "#D4A017",
@@ -46,8 +44,7 @@ const flowSteps = [
     number: "03",
     title: "Capital Access",
     headline: "Stop Funding Your Dreams With Your Own Money",
-    description:
-      "High-net-worth individuals never use their own money to build wealth. We show you how to access grants, business lines of credit, and funding vehicles that kickstart your journey without depleting your personal resources.",
+    description: "",
     outcome: "Access to capital through grants and lines of credit that kickstarts your wealth.",
     icon: "💰",
     color: "#0D2B4E",
@@ -56,8 +53,7 @@ const flowSteps = [
     number: "04",
     title: "Overfunded Life Insurance",
     headline: "Overfund a Life Insurance Policy",
-    description:
-      "A properly structured, overfunded life insurance policy becomes your personal bank — a guaranteed lifetime line of credit that keeps money flowing back to you instead of to outside lenders. This is the secret the wealthy have used for generations.",
+    description: "",
     outcome: "A self-operating financial instrument that grows wealth while protecting you.",
     icon: "🛡️",
     color: "#1A7A4A",
@@ -66,8 +62,7 @@ const flowSteps = [
     number: "05",
     title: "Asset Protection",
     headline: "Separate Yourself From Your Assets — Legally and Permanently",
-    description:
-      "Owning assets in your personal name is a risk. We help you legally transfer ownership to protected entities — trusts, holding companies, and LLCs — so your assets are shielded from lawsuits, creditors, and unexpected life events.",
+    description: "",
     outcome: "You control and own everything as a separate entity — shielded, scalable, and succession-ready.",
     icon: "⚖️",
     color: "#D4A017",
@@ -76,8 +71,7 @@ const flowSteps = [
     number: "06",
     title: "Legacy Insurance",
     headline: "Protect Every Policy — Ensure the Wealth Transfers, Not the Liability",
-    description:
-      "Life insurance is not just a death benefit — it is a legacy instrument and private bank. We structure your policies so they become guaranteed lines of credit and wealth transfer vehicles that pass to the next generation intact.",
+    description: "",
     outcome: "Life insurance becomes a legacy instrument and private bank — not just a death benefit.",
     icon: "🌿",
     color: "#0D2B4E",
@@ -86,8 +80,7 @@ const flowSteps = [
     number: "07",
     title: "Generational Architect",
     headline: "You Are Now the Architect of Your Family's Financial Future",
-    description:
-      "By completing The Flow, you have built a complete, self-sustaining wealth ecosystem. A system designed not just for you — but for your children, their children, and every generation that follows. This is legacy.",
+    description: "",
     outcome: "A complete, self-sustaining wealth ecosystem designed to grow and transfer across generations.",
     icon: "🏆",
     color: "#D4A017",
@@ -96,9 +89,9 @@ const flowSteps = [
 
 const agencyServices = [
   {
-    title: "Retirement Strategies",
+    title: "Life Time Line Of Credit",
     url: "https://www.7bandfinancialagency.com/retirement-strategies",
-    description: "Comprehensive plans to maximize your retirement income and security.",
+    description: "Comprehensive High Cash Value Life Insurance Policy (IUL)",
   },
   {
     title: "Social Security Exploration",
@@ -188,7 +181,7 @@ function StepCard({ step, index }: { step: (typeof flowSteps)[0]; index: number 
                 className="text-xs font-bold uppercase tracking-widest mb-1 block"
                 style={{ color: step.color }}
               >
-                Step {step.number} — {step.title}
+                LEVEL {step.number} — {step.title}
               </span>
               <h3
                 className="text-xl font-bold leading-tight"
@@ -304,10 +297,10 @@ export default function Services() {
               className="text-4xl lg:text-5xl font-black leading-tight mb-4"
               style={{ fontFamily: "'Playfair Display', serif", color: "#0D2B4E" }}
             >
-              Seven Steps. One Unbreakable System.
+              7 Levels. 1 System.
             </h2>
             <p className="text-gray-500 leading-relaxed">
-              The Flow is a complete, integrated system — each step activates the next. This is not a shortcut. It is a blueprint built on principles that have created generational wealth for decades.
+              The Flow is a complete, integrated system — each level unlocks the next. It is a blueprint built on principles that have created generational wealth for decades.
             </p>
           </div>
 
@@ -340,7 +333,7 @@ export default function Services() {
                 </span>
               </h2>
               <p className="text-white/70 leading-relaxed mb-6">
-                Every week, join us live on Zoom as we walk through The Flow — step by step. Whether you're just starting your financial journey or ready to build your legacy, this free webinar is your starting point.
+                Every week, join us live on Zoom as we walk through The Flow — Level by Level. Whether you're just starting your financial journey or ready to build your legacy, this free webinar is your starting point.
               </p>
               <ul className="space-y-3 mb-8">
                 {[
@@ -398,7 +391,7 @@ export default function Services() {
                   { label: "Platform", value: "Zoom Webinar" },
                   { label: "Duration", value: "Approx. 60–90 minutes" },
                   { label: "Cost", value: "Free to Attend" },
-                  { label: "Host", value: "7Band Financial Agency" },
+                  { label: "Host", value: "7Band Inc." },
                 ].map((item) => (
                   <div key={item.label} className="flex justify-between items-center py-3 border-b border-white/10">
                     <span className="text-white/50 text-sm">{item.label}</span>
@@ -445,10 +438,10 @@ export default function Services() {
             className="text-4xl lg:text-6xl font-black text-white leading-tight mb-6 max-w-3xl mx-auto"
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
-            Ready to Stop Working for Money?
+            Ready to Play the Money Game?
           </h2>
           <p className="text-white/70 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
-            The Flow is not a product — it is a transformation. We work with a select number of clients at a time to ensure every step is executed with precision and intention.
+            The Flow is not a product — it is a level up. We work with a select number of clients at a time to ensure every step is executed with precision and intention.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a
