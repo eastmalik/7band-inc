@@ -199,9 +199,6 @@ export default function Academy() {
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex flex-wrap items-center gap-3 mb-2">
-                    <span className="text-xs font-bold uppercase tracking-widest" style={{ color: "#D4A017" }}>
-                      Step {step.num}
-                    </span>
                     <h3 className="font-black text-[#0D2B4E] text-lg">{step.title}</h3>
                   </div>
                   <p className="text-gray-600 text-sm leading-relaxed mb-3">{step.desc}</p>
@@ -232,7 +229,7 @@ export default function Academy() {
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             {[
               { icon: BookOpen, title: "Sequential Learning", desc: "Most programs give you pieces of the puzzle; we give you the information in the exact order you need it to succeed." },
-              { icon: Users, title: "Community & Leadership", desc: "Hosted by MalikThaTruEast, providing direct guidance and accountability through every classroom in the curriculum." },
+              { icon: Users, title: "Community & Leadership", desc: "Hosted by Malik East, providing direct guidance and accountability through every classroom in the curriculum." },
               { icon: Award, title: "Incredible Value", desc: "Access the full 12-classroom library and private community for only $10 per month — plus a FREE Financial Architecture Audit when you join." },
             ].map((item, i) => (
               <div key={i} className="flex flex-col items-center text-center p-8 rounded-2xl" style={{ background: "#F8F7F4", border: "1px solid #e5e1d8" }}>
