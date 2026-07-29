@@ -10,7 +10,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   ArrowRight, CheckCircle2, Users, BookOpen, Shield,
-  Star, Zap, TrendingUp, Award, ChevronRight
+  Star, Zap, TrendingUp, Award
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -128,12 +128,9 @@ export default function Academy() {
             </h1>
 
             <p className="text-white/80 text-xl leading-relaxed max-w-2xl mb-4">
-              Join the only community providing a precise, 12-step sequential roadmap to wealth preservation and dynasty building.
+              Join the only community providing a 12 course roadmap to wealth preservation and legacy building.
             </p>
-            <p className="text-white/60 text-base leading-relaxed max-w-2xl mb-10">
-              Hosted by MalikThaTruEast inside a private Skool community — in the exact order you need it to succeed.
-            </p>
-
+            
             <div className="flex flex-col sm:flex-row gap-4 items-start">
               <a
                 href="https://www.skool.com/the-real-ethical-agents-4233/classroom"
@@ -142,16 +139,9 @@ export default function Academy() {
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-black text-sm uppercase tracking-widest transition-all hover:scale-105 shadow-lg"
                 style={{ background: "#D4A017", color: "#0D2B4E" }}
               >
-                Join the Academy — $10/mo
+                Join the Academy — $1.00/mo
                 <ArrowRight className="w-4 h-4" />
               </a>
-              <Link
-                href="/services"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-sm uppercase tracking-widest border border-white/30 text-white hover:bg-white/10 transition-all"
-              >
-                Learn About The Flow
-                <ChevronRight className="w-4 h-4" />
-              </Link>
             </div>
 
             {/* Free audit callout */}
