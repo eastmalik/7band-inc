@@ -166,11 +166,11 @@ export default function Academy() {
               className="text-4xl lg:text-5xl font-black text-[#0D2B4E] leading-tight"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
-              12 Classrooms.<br />
-              <span style={{ color: "#1A7A4A" }}>One Complete System.</span>
+              1 Platform.<br />
+              <span style={{ color: "#1A7A4A" }}>12 Modules</span>
             </h2>
             <p className="text-gray-600 mt-4 text-lg leading-relaxed">
-              12 modules of mastery — each classroom builds on the last. This is not a playlist. It is a sequential roadmap to wealth preservation and dynasty building.
+              Each classroom builds on the last, But feel free to explore around.
             </p>
             <a
               href="https://www.skool.com/the-real-ethical-agents-4233/classroom"
