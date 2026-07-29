@@ -14,7 +14,7 @@ const programs = [
   {
     icon: BookOpen,
     title: "Financial Literacy",
-    tagline: "Know Your Money. Build Your Future.",
+    tagline: 'Learn "The Money Game". Alter Your Future.',
     desc: "Our Financial Literacy program equips participants with the knowledge and skills to budget, save, invest, and plan for a secure financial future. From understanding credit scores to building emergency funds, we cover the essentials of personal finance.",
     outcomes: ["Budget creation & management", "Credit building strategies", "Savings & investment basics", "Debt reduction planning"],
     href: "/programs/financial-literacy",
