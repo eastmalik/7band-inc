@@ -12,12 +12,7 @@ import Footer from "@/components/Footer";
 import { toast } from "sonner";
 
 const guides = [
-  { title: "Budgeting 101: A Beginner's Guide", category: "Financial Literacy", type: "PDF", desc: "Learn the basics of creating and sticking to a personal budget." },
-  { title: "Understanding Your Credit Score", category: "Financial Literacy", type: "PDF", desc: "A comprehensive guide to credit scores, reports, and how to improve them." },
-  { title: "Starting a Business: First Steps", category: "Entrepreneurship", type: "PDF", desc: "Everything you need to know to take your business idea from concept to launch." },
-  { title: "Digital Safety Handbook", category: "Digital Learning", type: "PDF", desc: "Protect yourself and your family online with these essential safety practices." },
-  { title: "Youth Financial Planning Workbook", category: "Youth Programs", type: "PDF", desc: "An interactive workbook for young people to set and track financial goals." },
-  { title: "Community Benefits Navigator", category: "Community", type: "PDF", desc: "A guide to navigating government benefits and community resources." },
+  // Real guides will be added here
 ];
 
 const videos = [
@@ -74,7 +69,13 @@ export default function Resources() {
             </div>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {guides.map((guide, i) => (
+            {guides.length === 0 ? (
+              <div className="col-span-3 text-center py-16 text-gray-400">
+                <FileText className="h-12 w-12 mx-auto mb-4 opacity-30" />
+                <p className="text-lg font-semibold text-[#0D2B4E]/40">Guides coming soon</p>
+                <p className="text-sm mt-1">Free downloadable guides will be available here shortly.</p>
+              </div>
+            ) : guides.map((guide, i) => (
               <Card key={i} className="card-lift border-0 shadow-md">
                 <CardContent className="p-6">
                   <div className="flex items-start gap-3 mb-4">
