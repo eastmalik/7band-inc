@@ -25,22 +25,25 @@ const programData: Record<string, {
   "financial-literacy": {
     icon: BookOpen,
     title: "Financial Literacy",
-    tagline: "Know Your Money. Build Your Future.",
-    description: "Our Financial Literacy program is a comprehensive, community-centered curriculum designed to give participants the knowledge and confidence to take control of their financial lives. Whether you're just starting out or looking to improve your financial situation, this program meets you where you are.",
+    tagline: 'Learn "The Money Game". Alter Your Future.',
+    description: "Our Financial Literacy program is a comprehensive, community-centered curriculum designed to empower Gen Z, Gen X, women, and minorities with the tools they need to succeed in today's economy. We bridge the financial knowledge gap by teaching the 'rules of money' that aren't taught in schools, helping you transform how you think about wealth and secure your financial future.",
     details: [
-      "Understanding income, expenses, and budgeting",
-      "Building and repairing credit",
-      "Savings strategies and emergency funds",
-      "Introduction to investing and retirement planning",
-      "Navigating banking and financial services",
-      "Debt management and reduction strategies",
-      "Understanding taxes and benefits",
-      "Financial goal-setting and planning",
+      "The 3 Ways Money Grows: A deep dive into Fixed, Variable, and Indexed accounts to find the best fit for your goals",
+      "The \"0 is Your Hero\" Strategy: How to link your growth to the S&P 500 while maintaining a 0% floor to protect your principal from market crashes",
+      "Tax-Exemption Secrets: Understanding IRS codes 7702, 101a, and 72e for tax-free growth on your hard-earned money",
+      "Infinite Banking Concept: How to use specialized financial products as your own personal private bank for tax-free access to funds via electronic transfer or wire",
+      "Principal Protection: Applying the Warren Buffett philosophy — Rule #1: Don't lose money; Rule #2: Never forget Rule #1",
+      "Entrepreneurial Finance: Learning how to attract capital and build wealth that allows you to have a real impact on your community",
     ],
-    outcomes: ["Create and maintain a personal budget", "Understand your credit score and how to improve it", "Build a savings habit and emergency fund", "Make informed decisions about financial products"],
-    whoFor: "Adults 18+ in our community who want to improve their financial knowledge and skills. No prior financial experience required.",
-    duration: "8-week program, meeting once per week",
-    format: "In-person workshops with take-home materials",
+    outcomes: [
+      "Create and maintain a personal budget",
+      "Understand your credit score and how to improve it",
+      "Build a savings habit and emergency fund",
+      "Master the \"Money Game\": Gain the confidence to grow wealth using the same tax-free and risk-free tools used by the wealthy",
+    ],
+    whoFor: "This workshop is specifically designed for three key groups: Entrepreneurs & Business Owners looking for capital to fund, open, or grow a business venture; Active Savers building safety nets for retirement, business, or their children's education; and Baby Boomers focused on principal protection to ensure they never outlive their retirement savings.",
+    duration: "Ongoing workshops — join any session",
+    format: "Live webinars and in-person workshops",
     color: "bg-[#1A7A4A]",
   },
   "entrepreneurship": {
@@ -283,12 +286,16 @@ export default function ProgramDetail() {
       <section className="py-16 bg-[#F8F7F4]">
         <div className="container text-center">
           <h2 className="text-3xl font-black text-[#0D2B4E] mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
-            Explore Other Programs
+            {slug === "financial-literacy" ? "Ready to Stop the 'Rat Race'?" : "Explore Other Programs"}
           </h2>
-          <p className="text-gray-600 mb-6">We offer two focused programs to support your journey.</p>
+          <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+            {slug === "financial-literacy"
+              ? "Join our next session to learn how to grow your family's wealth for generations to come. Our workshops are purely educational — no sales pressure, just the financial truth you deserve to know."
+              : "We offer two focused programs to support your journey."}
+          </p>
           <Link href="/programs">
             <Button className="bg-[#0D2B4E] hover:bg-[#1a3f6f] text-white font-bold">
-              View All Programs <ArrowRight className="ml-2 h-4 w-4" />
+              {slug === "financial-literacy" ? "View All Programs" : "View All Programs"} <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </Link>
         </div>
@@ -298,4 +305,3 @@ export default function ProgramDetail() {
     </div>
   );
 }
-
