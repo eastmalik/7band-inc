@@ -11,7 +11,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { toast } from "sonner";
 
-const guides = [
+const guides: { title: string; category: string; type: string; desc: string }[] = [
   // Real guides will be added here
 ];
 
