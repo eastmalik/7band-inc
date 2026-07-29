@@ -10,7 +10,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   ArrowRight, CheckCircle2, Users, BookOpen, Shield,
-  Star, Zap, Lock, TrendingUp, Award, ChevronRight
+  Star, Zap, TrendingUp, Award, ChevronRight
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -65,31 +65,6 @@ const steps = [
     icon: "👑",
     outcome: "A complete generational wealth ecosystem",
   },
-];
-
-const benefits = [
-  { icon: BookOpen, title: "Full 7-Step Curriculum", desc: "Step-by-step video lessons covering every stage of The Flow in structured order." },
-  { icon: Users, title: "Private Community", desc: "Connect with like-minded members on the same wealth-building journey. Accountability built in." },
-  { icon: Zap, title: "Free Architecture Audit", desc: "Get a FREE Financial Architecture Audit when you join — a personalized review of your current financial foundation." },
-  { icon: Shield, title: "Expert Guidance", desc: "Direct access to Malik East and the 7Band Financial Agency team for questions and strategy." },
-  { icon: TrendingUp, title: "Live Q&A Sessions", desc: "Regular live sessions to answer your questions and keep you moving through the steps." },
-  { icon: Award, title: "Exclusive Resources", desc: "Templates, checklists, and tools you won't find anywhere else — in this order, with this context." },
-];
-
-const ecosystemSteps: Array<{
-  step: string;
-  label: string;
-  title: string;
-  sub: string;
-  color: string;
-  href: string;
-  active?: boolean;
-  external?: boolean;
-}> = [
-  { step: "01", label: "Learn", title: "7Band Inc.", sub: "Free nonprofit education", color: "#1A7A4A", href: "/programs" },
-  { step: "02", label: "Grow", title: "Financial Literacy Academy", sub: "$50/month community", color: "#D4A017", href: "/academy", active: true },
-  { step: "03", label: "Act", title: "The Flow", sub: "7-step wealth system", color: "#0D2B4E", href: "/services" },
-  { step: "04", label: "Build", title: "7Band Financial Agency", sub: "1-on-1 personalized services", color: "#8B1A1A", href: "https://www.7bandfinancialagency.com", external: true },
 ];
 
 export default function Academy() {
@@ -179,86 +154,6 @@ export default function Academy() {
         </div>
       </section>
 
-      {/* Ecosystem — Where Academy Fits */}
-      <section className="py-16 bg-white">
-        <div className="container">
-          <div className="text-center mb-12">
-            <Badge className="bg-[#0D2B4E]/10 text-[#0D2B4E] border-0 mb-3 text-xs font-semibold tracking-wider uppercase">
-              The 7Band Ecosystem
-            </Badge>
-            <h2
-              className="text-3xl lg:text-4xl font-black text-[#0D2B4E]"
-              style={{ fontFamily: "'Playfair Display', serif" }}
-            >
-              Where the Academy Fits
-            </h2>
-            <p className="text-gray-500 mt-3 max-w-xl mx-auto">
-              The Academy is the structured learning bridge between free education and personalized wealth-building services.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-            {ecosystemSteps.map((item, i) => (
-              <div key={i} className="relative">
-                {item.external ? (
-                  <a
-                    href={item.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`block p-6 rounded-2xl transition-all ${item.active ? "shadow-xl scale-105" : "hover:shadow-md"}`}
-                    style={{
-                      background: item.active ? item.color : `${item.color}10`,
-                      border: item.active ? `2px solid ${item.color}` : `1px solid ${item.color}30`,
-                    }}
-                  >
-                    <p className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: item.active ? "white" : item.color }}>
-                      Step {item.step} · {item.label}
-                    </p>
-                    <p className="font-black text-base leading-snug mb-1" style={{ color: item.active ? "white" : "#0D2B4E" }}>
-                      {item.title}
-                    </p>
-                    <p className="text-xs" style={{ color: item.active ? "rgba(255,255,255,0.7)" : "#6b7280" }}>
-                      {item.sub}
-                    </p>
-                    {item.active && (
-                      <Badge className="mt-3 bg-white/20 text-white border-0 text-xs">You are here</Badge>
-                    )}
-                  </a>
-                ) : (
-                  <Link href={item.href}>
-                    <div
-                      className={`p-6 rounded-2xl transition-all cursor-pointer ${item.active ? "shadow-xl scale-105" : "hover:shadow-md"}`}
-                      style={{
-                        background: item.active ? item.color : `${item.color}10`,
-                        border: item.active ? `2px solid ${item.color}` : `1px solid ${item.color}30`,
-                      }}
-                    >
-                      <p className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: item.active ? "white" : item.color }}>
-                        Step {item.step} · {item.label}
-                      </p>
-                      <p className="font-black text-base leading-snug mb-1" style={{ color: item.active ? "white" : "#0D2B4E" }}>
-                        {item.title}
-                      </p>
-                      <p className="text-xs" style={{ color: item.active ? "rgba(255,255,255,0.7)" : "#6b7280" }}>
-                        {item.sub}
-                      </p>
-                      {item.active && (
-                        <Badge className="mt-3 bg-white/20 text-white border-0 text-xs">You are here</Badge>
-                      )}
-                    </div>
-                  </Link>
-                )}
-                {i < ecosystemSteps.length - 1 && (
-                  <div className="hidden lg:flex absolute top-1/2 -right-2 z-10 w-4 h-4 items-center justify-center">
-                    <ChevronRight className="w-4 h-4 text-gray-400" />
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* What You'll Learn — 7 Steps */}
       <section className="py-20" style={{ background: "#F8F7F4" }}>
         <div className="container">
@@ -308,90 +203,6 @@ export default function Academy() {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* What's Included */}
-      <section className="py-20 bg-white">
-        <div className="container">
-          <div className="text-center mb-14">
-            <Badge className="bg-[#1A7A4A]/10 text-[#1A7A4A] border-0 mb-3 text-xs font-semibold tracking-wider uppercase">
-              Membership Includes
-            </Badge>
-            <h2
-              className="text-4xl font-black text-[#0D2B4E]"
-              style={{ fontFamily: "'Playfair Display', serif" }}
-            >
-              Everything You Need to Execute
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-            {benefits.map((b, i) => (
-              <Card key={i} className="border-0 shadow-sm hover:shadow-md transition-all" style={{ background: "#F8F7F4" }}>
-                <CardContent className="p-6">
-                  <div
-                    className="w-12 h-12 rounded-xl flex items-center justify-center mb-4"
-                    style={{ background: "#0D2B4E10" }}
-                  >
-                    <b.icon className="w-6 h-6" style={{ color: "#0D2B4E" }} />
-                  </div>
-                  <h3 className="font-black text-[#0D2B4E] mb-2">{b.title}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">{b.desc}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          {/* Pricing Card */}
-          <div className="max-w-xl mx-auto">
-            <div
-              className="rounded-3xl p-10 text-center"
-              style={{
-                background: "linear-gradient(135deg, #0D2B4E 0%, #051525 100%)",
-                border: "2px solid #D4A01740",
-              }}
-            >
-              <Lock className="w-8 h-8 mx-auto mb-4" style={{ color: "#D4A017" }} />
-              <p className="text-xs font-bold uppercase tracking-widest mb-2" style={{ color: "#D4A017" }}>
-                Private Community · Hosted on Skool
-              </p>
-              <div className="text-6xl font-black text-white mb-1" style={{ fontFamily: "'Playfair Display', serif" }}>
-                $50
-              </div>
-              <p className="text-white/60 text-sm mb-6">per month · cancel anytime</p>
-
-              <ul className="text-left space-y-3 mb-8">
-                {[
-                  "Full 7-step curriculum in structured order",
-                  "Private community access (Skool)",
-                  "FREE Financial Architecture Audit on join",
-                  "Live Q&A sessions with Malik East",
-                  "Exclusive templates, tools & checklists",
-                  "Direct access to 7Band Financial Agency team",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-white/80 text-sm">
-                    <CheckCircle2 className="w-4 h-4 flex-shrink-0" style={{ color: "#1A7A4A" }} />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-
-              <a
-                href="https://www.skool.com/the-real-ethical-agents-4233"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-2 py-4 rounded-full font-black text-sm uppercase tracking-widest transition-all hover:scale-105"
-                style={{ background: "#D4A017", color: "#0D2B4E" }}
-              >
-                Join the Academy — $50/mo
-                <ArrowRight className="w-4 h-4" />
-              </a>
-              <p className="text-white/40 text-xs mt-4">
-                Hosted on Skool · Secure payment · Cancel anytime
-              </p>
-            </div>
           </div>
         </div>
       </section>
