@@ -89,29 +89,29 @@ const flowSteps = [
 
 const agencyServices = [
   {
-    title: "Life Time Line Of Credit",
+    title: "Indexed Universal Life",
     url: "https://www.7bandfinancialagency.com/retirement-strategies",
     description: "Comprehensive High Cash Value Life Insurance Policy (IUL)",
   },
   {
-    title: "Social Security Exploration",
+    title: "Whole Life Insurance",
     url: "https://www.7bandfinancialagency.com/social-security-exploration",
-    description: "Optimize when and how you claim Social Security benefits.",
+    description: "Permanent coverage with guaranteed cash value growth.",
+  },
+  {
+    title: "Term Life Insurance",
+    url: "https://www.7bandfinancialagency.com/legacy-planning-concepts",
+    description: "Affordable, straightforward protection for a defined period. Ideal for income replacement and mortgage protection.",
   },
   {
     title: "Legacy Planning Concepts",
-    url: "https://www.7bandfinancialagency.com/legacy-planning-concepts",
-    description: "Structure your estate so wealth transfers — not liability.",
-  },
-  {
-    title: "Medicare Supplement Insurance",
     url: "https://www.7bandfinancialagency.com/medicare-supplement-insurance",
-    description: "Fill the gaps in Medicare coverage with the right supplemental plan.",
+    description: "Structure your estate so wealth transfers",
   },
   {
-    title: "Long-Term Care Insurance",
+    title: "Children's Whole Life",
     url: "https://www.7bandfinancialagency.com/long-term-care-insurance",
-    description: "Protect your assets from the devastating cost of long-term care.",
+    description: "Lock in your child's insurability and start their cash value growing today. The gift that compounds for life.",
   },
 ];
 
@@ -231,7 +231,7 @@ export default function Services() {
                 Our Financial Services
               </h1>
               <p className="text-white/75 leading-relaxed mb-8 text-lg">
-                7Band Financial Agency offers a full suite of financial services to protect, grow, and transfer your wealth. Each service is designed to work within The Flow framework.
+                7Band Financial Agency offers a full suite of financial services to protect, grow, and transfer your wealth. Level 4 of the flow deals with Life Insurance. That is where 7Band Financial Agency comes into play.
               </p>
               <a
                 href={AGENCY_URL}
