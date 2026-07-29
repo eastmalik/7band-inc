@@ -251,7 +251,7 @@ export default function Academy() {
             Ready to start Module 01?
           </h2>
           <p className="text-gray-600 mb-8 max-w-xl mx-auto text-lg">
-            Join a community of builders today and get your FREE Financial Architecture Audit included.
+            Join a community of builders today and get your FREE Financial Audit included.
           </p>
           <a
             href="https://www.skool.com/the-real-ethical-agents-4233/classroom"
