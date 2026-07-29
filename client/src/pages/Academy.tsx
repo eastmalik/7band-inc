@@ -18,52 +18,87 @@ import Footer from "@/components/Footer";
 const steps = [
   {
     num: "01",
-    title: "Credit Foundation",
-    desc: "Establish a personal and commercial credit profile that opens doors to capital, grants, and funding opportunities.",
-    icon: "🏗️",
-    outcome: "Capital access & grant eligibility",
+    title: "The Credit Score Foundation",
+    desc: "Stop being a financial liability to your own vision. In this module, we move you from invisible to investable — building the credit profile that opens every door.",
+    icon: "⚙️",
+    outcome: "A strong credit profile that opens doors to capital, grants, and business funding",
   },
   {
     num: "02",
-    title: "Proper LLC Structure",
-    desc: "Build a fundable business entity that is a credible asset — not a personal liability. Articles, EIN, D.U.N.S., Operating Agreement, Business Bank Account.",
-    icon: "🏢",
-    outcome: "A credible, fundable business entity",
+    title: "Proper Business Structure",
+    desc: "A business without structure is not an asset — it is a lawsuit waiting to happen. We guide you through building a credible, fundable business entity.",
+    icon: "📜",
+    outcome: "A credible, fundable business entity that stands on its own — separate from you personally",
   },
   {
     num: "03",
     title: "Accessing Capital (OPM)",
-    desc: "Stop funding your dreams with your own money. Learn to leverage Other People's Money through grants and business lines of credit.",
-    icon: "💰",
-    outcome: "Access to grants & lines of credit",
+    desc: "Stop funding your dreams with your own money. Once your foundation is solid, we show you how to access grants, business lines of credit, and other funding vehicles.",
+    icon: "🏛️",
+    outcome: "Access to capital through grants and lines of credit that kickstart your wealth",
   },
   {
     num: "04",
     title: "Private Banking (IUL)",
-    desc: "Redirect interest away from banks and into a self-replenishing financial instrument you control — an Indexed Universal Life policy.",
-    icon: "🏦",
-    outcome: "A self-operating financial instrument",
+    desc: "Why let your interest enrich the banks at 20–30% when you can keep it in the family? Learn how to use an Indexed Universal Life policy as your own private bank.",
+    icon: "🌳",
+    outcome: "A self-operating financial instrument that grows wealth while protecting you",
   },
   {
     num: "05",
-    title: "Trust & Holding Company Architecture",
-    desc: "Legally separate yourself from your assets for maximum protection and privacy. Trusts, holding companies, and LLCs working together.",
-    icon: "🛡️",
-    outcome: "Legally shielded, scalable assets",
+    title: "Trust & Holding Co. Architecture",
+    desc: "True legacy is built by separating yourself from your assets permanently. In this module we build the legal architecture that shields everything you own.",
+    icon: "🏙️",
+    outcome: "You control and own everything as a separate entity — shielded, scalable, and succession-ready",
   },
   {
     num: "06",
-    title: "Wealth Transfer Strategy",
-    desc: "Designate your Trust as the beneficiary to bypass probate, minimize estate taxes, and ensure wealth transfers — not liability.",
-    icon: "🌱",
-    outcome: "Wealth transfers, not liability",
+    title: "Protect Every Policy (Beneficiary Designation)",
+    desc: "Wealth that dies with the individual is a failure of the system. We finalize your beneficiary designations so your policies and assets transfer — not get lost.",
+    icon: "⚡",
+    outcome: "Life insurance becomes a legacy instrument and private bank — not just a death benefit",
   },
   {
     num: "07",
-    title: "Dynasty Building",
-    desc: "Finalize your multi-generational family office structure. A complete, self-sustaining wealth ecosystem designed to outlast you.",
+    title: "The Generational Wealth Dynasty",
+    desc: "You are now the Architect of your family's financial future. In this final module, we lock in the multi-generational structure that outlasts you.",
     icon: "👑",
-    outcome: "A complete generational wealth ecosystem",
+    outcome: "A complete, self-sustaining financial ecosystem designed to grow and transfer across generations",
+  },
+  {
+    num: "08",
+    title: "The Academy Library",
+    desc: "A curated resource vault of tools, templates, checklists, and reference materials to support every stage of your wealth-building journey.",
+    icon: "📚",
+    outcome: "On-demand access to every resource you need to execute The Flow",
+  },
+  {
+    num: "09",
+    title: "Private Markets",
+    desc: "Learn how to access investment opportunities that the general public never sees — private equity, alternative assets, and exclusive deal flow.",
+    icon: "📈",
+    outcome: "Access to private market investment opportunities beyond traditional stocks and bonds",
+  },
+  {
+    num: "10",
+    title: "Life Insurance",
+    desc: "Understanding Life Insurance Basics: What is life insurance, and why does it matter? A foundational module covering the types, uses, and power of life insurance.",
+    icon: "🛡️",
+    outcome: "A clear understanding of life insurance as a wealth tool — not just a death benefit",
+  },
+  {
+    num: "11",
+    title: "Budgeting",
+    desc: "Master the fundamentals of personal cash flow management. Learn how to allocate, track, and optimize your money so every dollar has a purpose.",
+    icon: "⚖️",
+    outcome: "A personal budget system that creates surplus and accelerates your path to financial freedom",
+  },
+  {
+    num: "12",
+    title: "Foundations",
+    desc: "The starting point for every member. This module establishes the core mindset, vocabulary, and principles behind The Flow before you begin building.",
+    icon: "♟️",
+    outcome: "A solid financial mindset and vocabulary that prepares you to execute every module that follows",
   },
 ];
 
@@ -165,8 +200,8 @@ export default function Academy() {
               className="text-4xl lg:text-5xl font-black text-[#0D2B4E] leading-tight"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
-              Seven Steps.<br />
-              <span style={{ color: "#1A7A4A" }}>One Unbreakable System.</span>
+              12 Classrooms.<br />
+              <span style={{ color: "#1A7A4A" }}>One Complete System.</span>
             </h2>
             <p className="text-gray-600 mt-4 text-lg leading-relaxed">
               The Academy teaches The Flow in full — each step builds on the last. This is not a playlist. It is a blueprint.
