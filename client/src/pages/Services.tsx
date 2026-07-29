@@ -128,40 +128,28 @@ function StepCard({ step, index }: { step: (typeof flowSteps)[0]; index: number 
     return () => observer.disconnect();
   }, []);
 
-  const isEven = index % 2 === 0;
-
   return (
     <div
       ref={ref}
-      className="relative"
+      className="flex flex-col"
       style={{
         opacity: visible ? 1 : 0,
         transform: visible ? "translateY(0)" : "translateY(40px)",
         transition: `opacity 0.6s ease ${index * 0.08}s, transform 0.6s ease ${index * 0.08}s`,
       }}
     >
-      {/* Connector line */}
-      {index < flowSteps.length - 1 && (
-        <div
-          className="absolute left-8 top-full w-0.5 h-8 z-10"
-          style={{ background: "linear-gradient(to bottom, #D4A017, transparent)" }}
-        />
-      )}
-
       <div
-        className={`flex gap-6 p-6 rounded-2xl border transition-all duration-300 hover:shadow-xl group ${
-          isEven ? "flex-row" : "flex-row"
-        }`}
+        className="flex flex-col gap-3 p-5 rounded-2xl border transition-all duration-300 hover:shadow-xl group h-full"
         style={{
           background: "white",
           borderColor: "rgba(13,43,78,0.1)",
-          borderLeft: `4px solid ${step.color}`,
+          borderTop: `4px solid ${step.color}`,
         }}
       >
         {/* Step number badge */}
-        <div className="flex-shrink-0">
+        <div className="flex items-center justify-between mb-1">
           <div
-            className="w-16 h-16 rounded-2xl flex items-center justify-center text-2xl font-black"
+            className="w-12 h-12 rounded-xl flex items-center justify-center text-lg font-black"
             style={{
               background: `${step.color}15`,
               border: `2px solid ${step.color}30`,
@@ -171,37 +159,33 @@ function StepCard({ step, index }: { step: (typeof flowSteps)[0]; index: number 
           >
             {step.number}
           </div>
+          <span className="text-2xl">{step.icon}</span>
         </div>
 
         {/* Content */}
-        <div className="flex-1 min-w-0">
-          <div className="flex items-start justify-between gap-4 mb-2">
-            <div>
-              <span
-                className="text-xs font-bold uppercase tracking-widest mb-1 block"
-                style={{ color: step.color }}
-              >
-                LEVEL {step.number} — {step.title}
-              </span>
-              <h3
-                className="text-xl font-bold leading-tight"
-                style={{ fontFamily: "'Playfair Display', serif", color: "#0D2B4E" }}
-              >
-                {step.headline}
-              </h3>
-            </div>
-            <span className="text-3xl flex-shrink-0">{step.icon}</span>
-          </div>
-          <p className="text-gray-600 text-sm leading-relaxed mb-3">{step.description}</p>
-          <div
-            className="flex items-start gap-2 p-3 rounded-xl"
-            style={{ background: `${step.color}08`, border: `1px solid ${step.color}20` }}
+        <div className="flex-1">
+          <span
+            className="text-xs font-bold uppercase tracking-widest mb-1 block"
+            style={{ color: step.color }}
           >
-            <CheckCircle className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: step.color }} />
-            <p className="text-sm font-medium" style={{ color: step.color }}>
-              <span className="font-bold">Key Outcome: </span>{step.outcome}
-            </p>
-          </div>
+            LEVEL {step.number}
+          </span>
+          <h3
+            className="text-base font-bold leading-tight mb-2"
+            style={{ fontFamily: "'Playfair Display', serif", color: "#0D2B4E" }}
+          >
+            {step.title}
+          </h3>
+          <p className="text-gray-500 text-xs leading-relaxed">{step.headline}</p>
+        </div>
+        <div
+          className="flex items-start gap-2 p-2 rounded-lg mt-auto"
+          style={{ background: `${step.color}08`, border: `1px solid ${step.color}20` }}
+        >
+          <CheckCircle className="w-3 h-3 flex-shrink-0 mt-0.5" style={{ color: step.color }} />
+          <p className="text-xs font-medium leading-snug" style={{ color: step.color }}>
+            {step.outcome}
+          </p>
         </div>
       </div>
     </div>
@@ -304,7 +288,7 @@ export default function Services() {
             </p>
           </div>
 
-          <div className="max-w-3xl mx-auto space-y-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {flowSteps.map((step, index) => (
               <StepCard key={step.number} step={step} index={index} />
             ))}
