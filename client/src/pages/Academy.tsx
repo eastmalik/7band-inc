@@ -241,27 +241,6 @@ export default function Academy() {
               </div>
             ))}
           </div>
-          {/* Step-by-Step Path */}
-          <div className="max-w-2xl mx-auto rounded-3xl p-10" style={{ background: "linear-gradient(135deg, #0D2B4E 0%, #051525 100%)", border: "2px solid #D4A01740" }}>
-            <p className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: "#D4A017" }}>Step-by-Step Path</p>
-            <h3 className="text-2xl font-black text-white mb-6" style={{ fontFamily: "'Playfair Display', serif" }}>Your Roadmap to the Dynasty</h3>
-            <div className="space-y-4">
-              {[
-                "Establish Credit & Business Structure",
-                "Access OPM & Private Banking",
-                "Secure Trust & Wealth Transfer Strategies",
-                "Build the Dynasty",
-              ].map((label, i) => (
-                <div key={i} className="flex items-center gap-4">
-                  <span className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-xs font-black" style={{ background: "#D4A017", color: "#0D2B4E" }}>{i + 1}</span>
-                  <div>
-                    <span className="text-xs font-bold uppercase tracking-widest" style={{ color: "#D4A017" }}>Step {i + 1}</span>
-                    <p className="text-white font-semibold text-sm">{label}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </section>
 
