@@ -254,7 +254,7 @@ export default function Services() {
                 Our Financial Services
               </h1>
               <p className="text-white/75 leading-relaxed mb-8 text-lg">
-                Beyond The Flow, 7Band Financial Agency offers a full suite of financial services to protect, grow, and transfer your wealth. Each service is designed to work within The Flow framework.
+                7Band Financial Agency offers a full suite of financial services to protect, grow, and transfer your wealth. Each service is designed to work within The Flow framework.
               </p>
               <a
                 href={AGENCY_URL}
