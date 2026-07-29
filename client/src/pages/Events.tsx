@@ -29,57 +29,28 @@ const events = [
   },
   {
     id: 2,
-    title: "Financial Literacy Program — Fall Cohort Kickoff",
-    date: "August 12, 2026",
-    time: "6:00 PM – 8:00 PM",
-    location: "Community Center, Main Hall",
+    title: 'Financial Literacy Program — "The Money Game"',
+    date: "Every Week",
+    time: "Check Zoom for weekly schedule",
+    location: "Zoom Workshop (Online)",
     category: "Financial Literacy",
-    type: "Program",
-    spots: 20,
-    isRecurring: false,
-    isExternal: false,
-    externalUrl: null,
-    desc: "Join us for the kickoff of our fall Financial Literacy cohort. Learn what to expect and meet your fellow participants.",
-  },
-  {
-    id: 3,
-    title: "Free Tax Preparation Assistance",
-    date: "September 6, 2026",
-    time: "10:00 AM – 2:00 PM",
-    location: "Community Library, Room B",
-    category: "Community",
-    type: "Service",
-    spots: 30,
-    isRecurring: false,
-    isExternal: false,
-    externalUrl: null,
-    desc: "VITA-certified volunteers will provide free tax preparation assistance for qualifying community members.",
-  },
-  {
-    id: 4,
-    title: "Community Partner Mixer",
-    date: "September 20, 2026",
-    time: "5:00 PM – 7:00 PM",
-    location: "7Band Community Hub",
-    category: "Community",
-    type: "Networking",
-    spots: 100,
-    isRecurring: false,
-    isExternal: false,
-    externalUrl: null,
-    desc: "An informal networking event for community organizations, businesses, and individuals interested in partnering with 7Band Inc.",
+    type: "Workshop",
+    spots: null,
+    isRecurring: true,
+    isExternal: true,
+    externalUrl: "https://zoom.us/webinar/register",
+    desc: "Join us every week for a live Zoom workshop on the rules of money that aren't taught in schools. Learn the 3 Ways Money Grows, tax-free strategies (IRS 7702, 101a, 72e), Infinite Banking, and Principal Protection. Purely educational — no sales pressure.",
   },
 ];
 
 const categoryColors: Record<string, string> = {
   "Financial Literacy": "bg-[#1A7A4A]/10 text-[#1A7A4A]",
   "The Flow": "bg-[#D4A017]/20 text-[#D4A017]",
-  "Community": "bg-[#D4A017]/10 text-[#D4A017]",
 };
 
 export default function Events() {
   const [filter, setFilter] = useState("All");
-  const categories = ["All", "The Flow", "Financial Literacy", "Community"];
+  const categories = ["All", "The Flow", "Financial Literacy"];
   const filtered = filter === "All" ? events : events.filter(e => e.category === filter);
 
   return (
