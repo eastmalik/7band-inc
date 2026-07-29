@@ -125,7 +125,7 @@ export default function Academy() {
 
             <div className="flex flex-col sm:flex-row gap-4 items-start">
               <a
-                href="https://www.skool.com/the-real-ethical-agents-4233"
+                href="https://www.skool.com/the-real-ethical-agents-4233/classroom"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-black text-sm uppercase tracking-widest transition-all hover:scale-105 shadow-lg"
@@ -171,6 +171,16 @@ export default function Academy() {
             <p className="text-gray-600 mt-4 text-lg leading-relaxed">
               The Academy teaches The Flow in full — each step builds on the last. This is not a playlist. It is a blueprint.
             </p>
+            <a
+              href="https://www.skool.com/the-real-ethical-agents-4233/classroom"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 mt-6 px-7 py-3 rounded-full font-bold text-sm uppercase tracking-widest transition-all hover:scale-105"
+              style={{ background: "#0D2B4E", color: "white" }}
+            >
+              Enter the Classroom
+              <ArrowRight className="w-4 h-4" />
+            </a>
           </div>
 
           <div className="space-y-4">
