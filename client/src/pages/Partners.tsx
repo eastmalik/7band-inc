@@ -78,30 +78,6 @@ export default function Partners() {
       </section>
 
       {/* Partnership Types */}
-      <section className="py-24 bg-[#F8F7F4]">
-        <div className="container">
-          <div className="grid lg:grid-cols-3 gap-8 mb-14 items-end">
-            <div className="lg:col-span-2">
-              <p className="text-[#1A7A4A] font-semibold text-xs uppercase tracking-widest mb-3">Partnership Opportunities</p>
-              <h2 className="text-4xl font-black text-[#0D2B4E] heading-underline" style={{ fontFamily: "'Playfair Display', serif" }}>
-                Ways to Partner
-              </h2>
-            </div>
-            <p className="text-gray-600 leading-relaxed">We partner with organizations across sectors to maximize community impact.</p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
-            {partnerTypes.map((pt, i) => (
-              <div key={i} className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
-                <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${i % 2 === 0 ? "bg-[#0D2B4E]" : "bg-[#1A7A4A]"}`}>
-                  <pt.icon className="h-6 w-6 text-white" />
-                </div>
-                <h3 className="font-bold text-[#0D2B4E] mb-2" style={{ fontFamily: "'Playfair Display', serif" }}>{pt.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{pt.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Current Partners */}
       <section className="py-24 bg-white">
