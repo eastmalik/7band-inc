@@ -3,7 +3,7 @@
  * Design: Deep Navy background, organized columns, gold accents
  */
 import { Link } from "wouter";
-import { Facebook, Twitter, Instagram, Linkedin, Youtube, Mail, Phone } from "lucide-react";
+import { Facebook, Youtube, Mail, Phone } from "lucide-react";
 
 const footerLinks = {
   organization: [
@@ -55,9 +55,6 @@ export default function Footer() {
            <div className="flex gap-3">
              {[
                 { icon: Facebook, label: "Facebook", href: "https://www.facebook.com/profile.php?id=61556716666847" },
-                { icon: Twitter, label: "Twitter", href: "#" },
-                { icon: Instagram, label: "Instagram", href: "#" },
-                { icon: Linkedin, label: "LinkedIn", href: "#" },
                 { icon: Youtube, label: "YouTube", href: "https://www.youtube.com/@Malik_East" },
               ].map(({ icon: Icon, label, href }) => (
                 <a

@@ -5,7 +5,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Mail, Phone, Clock, Facebook, Twitter, Instagram, Linkedin, CalendarCheck } from "lucide-react";
+import { Mail, Phone, Clock, Facebook, Youtube, CalendarCheck } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { toast } from "sonner";
@@ -73,15 +73,15 @@ export default function Contact() {
                 <p className="text-xs font-semibold text-[#D4A017] uppercase tracking-wider mb-3">Follow Us</p>
                 <div className="flex gap-3">
                   {[
-                    { icon: Facebook, label: "Facebook" },
-                    { icon: Twitter, label: "Twitter" },
-                    { icon: Instagram, label: "Instagram" },
-                    { icon: Linkedin, label: "LinkedIn" },
-                  ].map(({ icon: Icon, label }) => (
+                    { icon: Facebook, label: "Facebook", href: "https://www.facebook.com/profile.php?id=61556716666847" },
+                    { icon: Youtube, label: "YouTube", href: "https://www.youtube.com/@Malik_East" },
+                  ].map(({ icon: Icon, label, href }) => (
                     <a
                       key={label}
-                      href="#"
+                      href={href}
                       aria-label={label}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="w-9 h-9 rounded-full bg-[#0D2B4E]/10 hover:bg-[#0D2B4E] hover:text-white flex items-center justify-center text-[#0D2B4E] transition-colors"
                     >
                       <Icon className="h-4 w-4" />
