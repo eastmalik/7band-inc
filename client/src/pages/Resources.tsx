@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { FileText, Video, BookOpen, Download, ExternalLink } from "lucide-react";
+import { FileText, BookOpen, Download } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { toast } from "sonner";
@@ -33,13 +33,6 @@ const guides: { title: string; category: string; type: string; desc: string; url
     desc: "A detailed breakdown of the growth and flexibility benefits of IUL — market protection with annual reset, tax-free access, and overloan protection — alongside the costs and complexity risks to consider.",
     url: "/manus-storage/IUL_Insurance_Pros_and_Cons_37e887ac.webp",
   },
-];
-
-const videos = [
-  { title: "Introduction to Financial Literacy", duration: "12 min", category: "Financial Literacy" },
-  { title: "How to Write a Business Plan", duration: "18 min", category: "Entrepreneurship" },
-  { title: "Computer Basics for Beginners", duration: "22 min", category: "Digital Learning" },
-  { title: "Building Credit from Scratch", duration: "15 min", category: "Financial Literacy" },
 ];
 
 const faqs = [
@@ -115,41 +108,6 @@ export default function Resources() {
                     <a href={guide.url} target="_blank" rel="noopener noreferrer" download>
                       <Download className="mr-2 h-3.5 w-3.5" /> View & Download
                     </a>
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Videos */}
-      <section className="py-20 bg-[#F8F7F4]">
-        <div className="container">
-          <h2 className="text-4xl font-black text-[#0D2B4E] mb-10" style={{ fontFamily: "'Playfair Display', serif" }}>
-            Video Library
-          </h2>
-          <div className="grid md:grid-cols-2 gap-4">
-            {videos.map((video, i) => (
-              <Card key={i} className="card-lift border-0 shadow-md">
-                <CardContent className="p-5 flex items-center gap-4">
-                  <div className="w-14 h-14 rounded-xl bg-[#0D2B4E] flex items-center justify-center shrink-0">
-                    <Video className="h-6 w-6 text-[#D4A017]" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="font-bold text-[#0D2B4E] mb-1">{video.title}</h3>
-                    <div className="flex items-center gap-3">
-                      <Badge className="bg-[#1A7A4A]/10 text-[#1A7A4A] border-0 text-xs">{video.category}</Badge>
-                      <span className="text-gray-400 text-xs">{video.duration}</span>
-                    </div>
-                  </div>
-                  <Button
-                    size="sm"
-                    variant="outline"
-                    className="border-[#0D2B4E]/30 text-[#0D2B4E] shrink-0"
-                    onClick={() => toast.info("Video library coming soon!")}
-                  >
-                    <ExternalLink className="h-3.5 w-3.5" />
                   </Button>
                 </CardContent>
               </Card>
