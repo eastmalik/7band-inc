@@ -5,7 +5,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Mail, Phone, MapPin, Clock, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Mail, Phone, Clock, Facebook, Twitter, Instagram, Linkedin, CalendarCheck } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { toast } from "sonner";
@@ -49,10 +49,10 @@ export default function Contact() {
                 </h2>
               </div>
               {[
-                { icon: Mail, label: "Email", value: "info@7bandinc.org", href: "mailto:info@7bandinc.org" },
-                { icon: Phone, label: "Phone", value: "(123) 456-7890", href: "tel:+11234567890" },
-                { icon: MapPin, label: "Address", value: "Community Center\nYour City, ST 00000", href: null },
+                { icon: Mail, label: "Email", value: "7bandfinancial@gmail.com", href: "mailto:7bandfinancial@gmail.com" },
+                { icon: Phone, label: "Phone", value: "678-775-9800", href: "tel:+16787759800" },
                 { icon: Clock, label: "Office Hours", value: "Mon–Fri: 9:00 AM – 5:00 PM\nSat: 10:00 AM – 2:00 PM", href: null },
+                { icon: CalendarCheck, label: "Book a Free Session", value: "Schedule a 10-min call with Malik East", href: "https://calendly.com/malikeast/10min" },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-xl bg-[#0D2B4E]/10 flex items-center justify-center shrink-0">
@@ -153,4 +153,3 @@ export default function Contact() {
     </div>
   );
 }
-
