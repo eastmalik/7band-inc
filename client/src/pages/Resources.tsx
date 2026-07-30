@@ -19,6 +19,13 @@ const guides: { title: string; category: string; type: string; desc: string; url
     desc: "A visual guide to how IUL policies grow tax-free, protect your principal with a 0% floor, and give you tax-free access to cash for college, retirement, business capital, and emergencies.",
     url: "/manus-storage/Indexed_Universal_Life_Policy_Guide_8de18451.webp",
   },
+  {
+    title: "Wealth Protection & Growth: The Power of Cash Value Life Insurance",
+    category: "Financial Literacy",
+    type: "Guide",
+    desc: "An infographic outlining the living benefits and strategic advantages of Cash Value Life Insurance — market-proof growth, tax-free access to funds, and robust asset protection.",
+    url: "/manus-storage/Cash_Value_Life_Insurance_Benefits_dbe91094.webp",
+  },
 ];
 
 const videos = [
