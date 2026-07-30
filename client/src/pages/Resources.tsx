@@ -26,6 +26,13 @@ const guides: { title: string; category: string; type: string; desc: string; url
     desc: "An infographic outlining the living benefits and strategic advantages of Cash Value Life Insurance — market-proof growth, tax-free access to funds, and robust asset protection.",
     url: "/manus-storage/Cash_Value_Life_Insurance_Benefits_dbe91094.webp",
   },
+  {
+    title: "Is an IUL Right for You? Weighing the Pros and Cons of Indexed Universal Life Insurance",
+    category: "Financial Literacy",
+    type: "Guide",
+    desc: "A detailed breakdown of the growth and flexibility benefits of IUL — market protection with annual reset, tax-free access, and overloan protection — alongside the costs and complexity risks to consider.",
+    url: "/manus-storage/IUL_Insurance_Pros_and_Cons_37e887ac.webp",
+  },
 ];
 
 const videos = [
