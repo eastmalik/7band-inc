@@ -32,7 +32,6 @@ const navLinks = [
   { label: "Academy", href: "/academy" },
   { label: "Partners", href: "/partners" },
   { label: "Resources", href: "/resources" },
-  { label: "News", href: "/news" },
   { label: "Contact", href: "/contact" },
 ];
 

@@ -13,7 +13,6 @@ import Donate from "./pages/Donate";
 import Volunteer from "./pages/Volunteer";
 import Partners from "./pages/Partners";
 import Resources from "./pages/Resources";
-import News from "./pages/News";
 import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 import Academy from "./pages/Academy";
@@ -32,7 +31,6 @@ function Router() {
       <Route path="/volunteer" component={Volunteer} />
       <Route path="/partners" component={Partners} />
       <Route path="/resources" component={Resources} />
-      <Route path="/news" component={News} />
       <Route path="/contact" component={Contact} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
