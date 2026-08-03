@@ -230,7 +230,7 @@ export default function Academy() {
             {[
               { icon: BookOpen, title: "Sequential Learning", desc: "Most programs give you pieces of the puzzle; we give you the information in the exact order you need it to succeed." },
               { icon: Users, title: "Community & Leadership", desc: "Hosted by Malik East, providing direct guidance and accountability through every classroom in the curriculum." },
-              { icon: Award, title: "Incredible Value", desc: "Access the full 12-classroom library and private community for only $10 per month — plus a FREE Financial Architecture Audit when you join." },
+              { icon: Award, title: "Incredible Value", desc: "Access the full 12-classroom library and private community for only $1.00 per month — plus a FREE Financial Audit when you join." },
             ].map((item, i) => (
               <div key={i} className="flex flex-col items-center text-center p-8 rounded-2xl" style={{ background: "#F8F7F4", border: "1px solid #e5e1d8" }}>
                 <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5" style={{ background: "#0D2B4E10" }}>

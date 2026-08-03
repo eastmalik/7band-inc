@@ -121,6 +121,10 @@ export default function Footer() {
               Contact
             </h4>
             <div className="space-y-2">
+              <a href="mailto:info@7bandinc.org" className="flex items-center gap-2 text-white/70 hover:text-white text-sm transition-colors">
+                <Mail className="h-3.5 w-3.5 shrink-0" />
+                info@7bandinc.org
+              </a>
               <a href="mailto:7bandfinancial@gmail.com" className="flex items-center gap-2 text-white/70 hover:text-white text-sm transition-colors">
                 <Mail className="h-3.5 w-3.5 shrink-0" />
                 7bandfinancial@gmail.com
