@@ -27,7 +27,7 @@ const programs = [
     tagline: "Science Over Marketing. Savings Over Spending.",
     desc: "The Smart Beauty Project empowers Black women with the scientific knowledge and financial literacy to make informed purchasing decisions — building wealth one beauty choice at a time. A 501(c)(3) nonprofit operating since 2022.",
     outcomes: ["Ingredient label reading skills", "Marketing vs. science literacy", "Beauty budget planning", "Intentional purchasing habits"],
-    href: "https://smartbeauty-essknvt9.manus.space/",
+    href: "https://www.thesmartbeautyproject.com",
     color: "bg-[#0D2B4E]",
     external: true,
   },

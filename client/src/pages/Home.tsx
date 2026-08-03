@@ -25,7 +25,7 @@ import Footer from "@/components/Footer";
 
 const programs = [
   { icon: BookOpen, title: "Financial Literacy",       desc: "We equip participants with the resources to take control of their financial lives.", href: "/programs/financial-literacy", color: "bg-[#1A7A4A]" },
-  { icon: Star,     title: "The Smart Beauty Project", desc: "Empowering Black women through financial literacy and consumer education.", href: "https://smartbeauty-essknvt9.manus.space/", color: "bg-[#0D2B4E]" },
+  { icon: Star,     title: "The Smart Beauty Project", desc: "Empowering Black women through financial literacy and consumer education.", href: "https://www.thesmartbeautyproject.com", color: "bg-[#0D2B4E]" },
 ];
 
 const stats = [
