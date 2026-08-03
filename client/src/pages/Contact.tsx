@@ -50,7 +50,6 @@ export default function Contact() {
               </div>
               {[
                 { icon: Mail, label: "General Inquiries", value: "info@7bandinc.org", href: "mailto:info@7bandinc.org" },
-                { icon: Mail, label: "Financial Services", value: "7bandfinancial@gmail.com", href: "mailto:7bandfinancial@gmail.com" },
                 { icon: Phone, label: "Phone", value: "678-775-9800", href: "tel:+16787759800" },
                 { icon: Clock, label: "Office Hours", value: "Mon–Fri: 9:00 AM – 5:00 PM\nSat: 10:00 AM – 2:00 PM", href: null },
                 { icon: CalendarCheck, label: "Book a Free Session", value: "Schedule a 10-min call with Malik East", href: "https://calendly.com/malikeast/10min" },
