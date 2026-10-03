@@ -17,21 +17,21 @@ const guides: { title: string; category: string; type: string; desc: string; url
     category: "Financial Literacy",
     type: "Guide",
     desc: "A visual guide to how IUL policies grow tax-free, protect your principal with a 0% floor, and give you tax-free access to cash for college, retirement, business capital, and emergencies.",
-    url: "/manus-storage/Indexed_Universal_Life_Policy_Guide_8de18451.webp",
+    url: "/images/Indexed_Universal_Life_Policy_Guide_8de18451.webp",
   },
   {
     title: "Wealth Protection & Growth: The Power of Cash Value Life Insurance",
     category: "Financial Literacy",
     type: "Guide",
     desc: "An infographic outlining the living benefits and strategic advantages of Cash Value Life Insurance — market-proof growth, tax-free access to funds, and robust asset protection.",
-    url: "/manus-storage/Cash_Value_Life_Insurance_Benefits_dbe91094.webp",
+    url: "/images/Cash_Value_Life_Insurance_Benefits_dbe91094.webp",
   },
   {
     title: "Is an IUL Right for You? Weighing the Pros and Cons of Indexed Universal Life Insurance",
     category: "Financial Literacy",
     type: "Guide",
     desc: "A detailed breakdown of the growth and flexibility benefits of IUL — market protection with annual reset, tax-free access, and overloan protection — alongside the costs and complexity risks to consider.",
-    url: "/manus-storage/IUL_Insurance_Pros_and_Cons_37e887ac.webp",
+    url: "/images/IUL_Insurance_Pros_and_Cons_37e887ac.webp",
   },
 ];
 

@@ -36,7 +36,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
              <img
-                src="/manus-storage/logo-7band_52529872.png"
+                src="/images/logo-7band_52529872.webp"
                 alt="7Band Inc."
                 className="h-10 w-10 object-contain"
               />

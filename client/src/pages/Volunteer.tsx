@@ -40,7 +40,7 @@ export default function Volunteer() {
       {/* Hero */}
       <section className="bg-[#1A7A4A] pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <img src="/manus-storage/volunteer-hero_8eb4b506.jpg" alt="" className="w-full h-full object-cover" />
+          <img src="/images/volunteer-hero_8eb4b506.jpg" alt="" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-[#1A7A4A]/60" />
         </div>
         <div className="container relative z-10">

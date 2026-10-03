@@ -44,7 +44,7 @@ export default function Partners() {
       {/* Hero */}
       <section className="bg-[#0D2B4E] pt-32 pb-24 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <img src="/manus-storage/programs-hero_ce0d26ec.jpg" alt="" className="w-full h-full object-cover" />
+          <img src="/images/programs-hero_ce0d26ec.jpg" alt="" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0D2B4E] to-[#0D2B4E]/60" />
         </div>
         <div className="absolute left-0 top-0 bottom-0 w-2 flex flex-col gap-0">
