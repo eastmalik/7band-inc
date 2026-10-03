@@ -94,7 +94,7 @@ export default function Academy() {
         <div
           className="absolute inset-0 opacity-20"
           style={{
-            backgroundImage: `url('/images/academy-hero_65336d13.jpg')`,
+            backgroundImage: `url('/images/academy-hero_65336d13.webp')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
