@@ -41,7 +41,7 @@ export default function Programs() {
       {/* Hero */}
       <section className="bg-[#0D2B4E] pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <img src="/manus-storage/programs-hero_ce0d26ec.jpg" alt="" className="w-full h-full object-cover" />
+          <img src="/images/programs-hero_ce0d26ec.jpg" alt="" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-[#0D2B4E]/60" />
         </div>
         <div className="container relative z-10">

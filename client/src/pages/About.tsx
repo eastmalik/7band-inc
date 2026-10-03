@@ -34,7 +34,7 @@ export default function About() {
       {/* Hero */}
       <section className="bg-[#0D2B4E] pt-32 pb-24 relative overflow-hidden">
         <div className="absolute inset-0 opacity-25">
-          <img src="/manus-storage/about-mission_6e198f1f.jpg" alt="" className="w-full h-full object-cover" />
+          <img src="/images/about-mission_6e198f1f.jpg" alt="" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0D2B4E] via-[#0D2B4E]/80 to-[#0D2B4E]/40" />
         </div>
         <div className="absolute left-0 top-0 bottom-0 w-2 flex flex-col gap-0">

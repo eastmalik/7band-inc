@@ -89,7 +89,7 @@ export default function Home() {
       <section className="relative min-h-screen flex items-center overflow-hidden bg-[#0D2B4E]">
         <div className="absolute inset-0">
           <img
-            src="/manus-storage/hero-community_2f44b0cc.jpg"
+            src="/images/hero-community_2f44b0cc.jpg"
             alt="Community members engaged in a workshop"
             className="w-full h-full object-cover opacity-35"
           />
@@ -194,7 +194,7 @@ export default function Home() {
             {/* Photo — right, with decorative offset */}
             <div className="photo-editorial relative">
               <img
-                src="/manus-storage/about-mission_6e198f1f.jpg"
+                src="/images/about-mission_6e198f1f.jpg"
                 alt="Community leader with youth"
                 className="relative z-10 w-full rounded-2xl shadow-2xl object-cover aspect-[4/3]"
               />
@@ -278,7 +278,7 @@ export default function Home() {
       <section className="relative py-24 bg-[#1A7A4A] overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/manus-storage/programs-hero_ce0d26ec.jpg"
+            src="/images/programs-hero_ce0d26ec.jpg"
             alt=""
             className="w-full h-full object-cover opacity-15"
           />
